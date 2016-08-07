@@ -1,12 +1,9 @@
 # First words
 Before beginning with this tutorial make sure you have the following at hand:
-* A Raspberry Pi 2 or 3 B with Raspbian or a device running Debian
-* At least 3 hours of time (on Pi, potentially far less on Debian depending on your machine)
+* A Raspberry Pi 2 or 3 B with Raspbian
+* At least 3 hours of time
 * Patience
 * Basic Knowledge on how to use the shell   
-
-Please not that this guide needs different lines sometimes depending if you're on Raspbian or Debian. The parts where this is the case are specifically marked. Make sure you only run the commands for the environment you're running on.
-This whole guide was tested on Debian 8. Other versions may or may not be supported.
 
 # Installing sudo and git
 Since some debian distros don't come with sudo pre-installed we're gonna install it.
@@ -76,19 +73,7 @@ Run the following commands, one at a time.
 `cd /usr/src`  
 `sudo git clone git://git.videolan.org/x264`  
 `cd x264` 
-
-***
-### Only for Raspbian  
 `sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl`  
-***
-
-***
-### For Debian
-If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
-`sudo ./configure --enable-static --disable-opencl --disable-asm`  
-
-***
-### For both systems 
 `make`  
 `sudo make install`  
 
@@ -99,17 +84,10 @@ If you are installing on a Debian powered machine without an ARM CPU use this in
 `cd FFmpeg`  
 
 ***
-### Only for Raspbian
 The following code until the next text-block is a single line (formating sometimes splits it in 2):  
 `sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree`  
 ***
 
-***
-### For Debian users
-If you are installing on a Debian powered machine without an ARM CPU use this instead of the previous line:  
-`sudo ./configure --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree --disable-yasm`  
-***
-### For both systems
 Now if you own a Raspberry Pi 2 you can use -j4 appended to the following command to use all 4 cores. Make sure your raspberry Pi is properly cooled, because this will produce considerable load on the CPU for extended time. If you don't cool your Raspberry properly it might get damaged. Expect this command to take up to an hour!  Remove -j4 if you don't own a quadcore Pi.  
 `sudo make -j4`  
 `sudo make install`  
@@ -156,6 +134,3 @@ If you want to run the bot when the Pi boots refer to the following tutorial (No
 [Awesome Tutorial](http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/)
 Instead of the lines used in this tutorial, use the lines in "Running the bot".
 Updating the bot is also identical to the steps in the linux tutorial.
-***
-
-***
