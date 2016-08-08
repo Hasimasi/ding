@@ -72,9 +72,46 @@ At this point, you need to create your bot's `config/options.ini` file with your
 
 You should be able to run the bot with the commands in section 6, but if you'd like your bot to run automatically when the computer is turned on, follow these optional steps. If you don't care about this, skip this step.
 
+Create the following file `/etc/systemd/system/rhinobot.service` (you will need sudo for this). Replace both instances of `<install_dir>` with your full installation directory (such as `/srv/rhinobot`):
+
+```
+[Unit]
+Description=RhinoBot
+After=multi-user.target
+[Service]
+WorkingDirectory=<install_dir>
+User=root
+Group=root
+ExecStart=/usr/local/bin/python3.5 <install_dir>/run.py
+Type=idle
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Finally, run the following command:
+
+```
+$ sudo systemctl enable rhinobot.service
+```
+
 # 6. Done!
 
-You should now be able to run the bot (remember your install directory as noted in section 3, and remember to leave off `sudo` if you installed to your home directory):
+You should now be able to run the bot. If you followed section 5, you can run the bot with:
+
+```
+$ sudo service rhinobot start
+```
+
+And you can check if your bot is currently running with
+
+```
+$ sudo service rhinobot status
+```
+
+If you skipped section 5, you can run the bot like so (remember your install directory as noted in section 3):
 
 ```
 $ cd <install_dir>
