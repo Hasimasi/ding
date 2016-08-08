@@ -72,7 +72,7 @@ At this point, you need to create your bot's `config/options.ini` file with your
 
 You should be able to run the bot with the commands in section 6, but if you'd like your bot to run automatically when the computer is turned on, follow these optional steps. If you don't care about this, skip this step.
 
-Create the following file `/etc/systemd/system/rhinobot.service` (you will need sudo for this). Replace both instances of `<install_dir>` with your full installation directory (such as `/srv/rhinobot`):
+Create the file `/etc/systemd/system/rhinobot.service` with the following contents (you will need sudo for this). Replace both instances of `<install_dir>` with your full installation directory (such as `/srv/rhinobot`):
 
 ```
 [Unit]
