@@ -124,6 +124,10 @@ This installs the various python dependencies used by the bot.
 Go to https://discordapp.com/developers/applications/me and create a new application.     
 Use this video for reference: https://www.youtube.com/watch?v=yQhdjAWmObM     
 
+**Note:** When creating the Bot User, remember to untick "Require OAuth2 Code Grant". This is for multiple scopes, but since you only use one it will break the authorization if you tick it.
+
+![Untick OAuth2 Code Grant](http://i.imgur.com/9KNPXWA.png)
+
 To invite your bot to your server replace `<CLIENT ID>` with your bot's client ID in this link:    
 `https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=0`     
 
