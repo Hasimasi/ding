@@ -116,7 +116,7 @@ To invite your bot to your server replace `<CLIENT ID>` with your bot's client I
 
 **Note:** When creating the Bot User, remember to untick "Require OAuth2 Code Grant". This is for multiple scopes, but since you only use one it will break the authorization if you tick it.
 
-![Untick OAuth2 Code Grant](http://imgur.com/a/eD303)
+![Untick OAuth2 Code Grant](http://i.imgur.com/9KNPXWA.png)
 
 **Example:**     
 https://discordapp.com/oauth2/authorize?client_id=17000000000000296&scope=bot&permissions=0     
