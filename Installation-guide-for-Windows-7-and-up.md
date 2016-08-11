@@ -76,6 +76,10 @@ Go to https://discordapp.com/developers/applications/me and create a new applica
 
 Watch [this video](https://www.youtube.com/watch?v=yQhdjAWmObM) for reference on how to make a new bot user. 
 
+**Note:** When creating the Bot User, remember to untick "Require OAuth2 Code Grant". This is for multiple scopes, but since you only use one it will break the authorization if you tick it.
+
+![Untick OAuth2 Code Grant](http://i.imgur.com/9KNPXWA.png)
+
 After you've made your bot account, you need to add it to your server! 
 
 You then need to generate an OAuth link. Replace `<CLIENT_ID>` with your bot's Client/Application ID in this link:
