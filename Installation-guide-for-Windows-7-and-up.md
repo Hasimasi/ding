@@ -109,6 +109,8 @@ Configure the file however you want, it should explain everything you need.  You
 
 ![Getting your token](http://i.imgur.com/cN4YehO.png)
 
+**Make sure you save the file after doing this. Some people forget to. It should be common sense.**
+
 If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
 ### 2.d: Start the bot!
