@@ -20,7 +20,7 @@ Just use the playlist link. You need to use the actual playlist URL though, not 
 - Bad: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0&list=PLC0A615438E62547A`
 
 ## Does it work with Spotify?
-No, and it probably never will.
+No, and it probably never will.  Use this instead: http://www.playlistbuddy.com/
 
 ## Can it play streams?
 No. MusicBot downloads music before playing it, and therefore streams such as Twitch are not playable.
