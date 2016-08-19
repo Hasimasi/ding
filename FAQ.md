@@ -20,7 +20,7 @@ Just use the playlist link. You need to use the actual playlist URL though, not 
 - Bad: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0&list=PLC0A615438E62547A`
 
 ## Does it work with Spotify?
-No, and it probably never will. This is because per **Section 8** of Spotify's [Terms and Conditions of Use](https://www.spotify.com/uk/legal/end-user-agreement/#s8), "ripping" or broadcasting music to the public that originates from their service is prohibited. Additionally, Spotify do not provide an API for playing full tracks, only 30 second samples.
+No, and it probably never will. This is because per **Section 8** of Spotify's [Terms and Conditions of Use](https://www.spotify.com/uk/legal/end-user-agreement/#s8), "ripping" or broadcasting music to the public that originates from their service is prohibited. Additionally, Spotify do not provide an API for playing full tracks, only 30 second samples - nor does `youtube-dl` support them.
 
 You can convert your Spotify playlists to YouTube ones using a service like [PlaylistBuddy](http://www.playlistbuddy.com/).
 
