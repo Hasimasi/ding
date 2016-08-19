@@ -20,7 +20,9 @@ Just use the playlist link. You need to use the actual playlist URL though, not 
 - Bad: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0&list=PLC0A615438E62547A`
 
 ## Does it work with Spotify?
-No, and it probably never will.  Use this instead: http://www.playlistbuddy.com/
+No, and it probably never will. This is because per **Section 8** of Spotify's [Terms and Conditions of Use](https://www.spotify.com/uk/legal/end-user-agreement/#s8), "ripping" or broadcasting music to the public that originates from their service is prohibited. Additionally, Spotify do not provide an API for playing full tracks, only 30 second samples.
+
+You can convert your Spotify playlists to YouTube ones using a service like [PlaylistBuddy](http://www.playlistbuddy.com/).
 
 ## Can it play streams?
 No. MusicBot downloads music before playing it, and therefore streams such as Twitch are not playable.
