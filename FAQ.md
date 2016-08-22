@@ -37,5 +37,9 @@ MusicBot uses `youtube-dl`. For a list of supported sites, see [youtube-dl suppo
 ## How do I create a `Bot` account?
 Read the documentation on bot accounts over at the [Discord developers site](https://discordapp.com/developers/docs/intro). We won't provide much help for making these accounts.
 
-### How do I make it join my server?
+## How do I make it join my server?
 Again, read the documentation. You will need to generate an OAuth URL using your client ID.
+
+## Is it possible to play files from my PC?
+Local file support isn't a thing as of yet. It is in development, however.
+
