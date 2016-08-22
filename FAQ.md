@@ -24,6 +24,8 @@ No, and it probably never will. This is because per **Section 8** of Spotify's [
 
 You can convert your Spotify playlists to YouTube ones using a service like [PlaylistBuddy](http://www.playlistbuddy.com/).
 
+**Note**: This applies to other similar services as well (Google Play Music, Amazon etc.)
+
 ## Can it play streams?
 No. MusicBot downloads music before playing it, and therefore streams such as Twitch are not playable.
 
