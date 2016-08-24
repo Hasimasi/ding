@@ -53,7 +53,7 @@ Determine where you want to install the bot, such as `/srv/rhinobot`. This locat
 ```
 $ sudo git clone https://github.com/SexualRhinoceros/MusicBot.git <install_dir>
 $ cd <install_dir>
-$ sudo checkout master
+$ git checkout master
 ```
 
 ## Install Python dependencies
