@@ -38,8 +38,8 @@ $ cd Python-3.5.x
 
 ```
 $ sudo ./configure
-$ sudo ./make
-$ sudo ./make altinstall
+$ sudo make
+$ sudo make altinstall
 ```
 
 This will install python3.5 and pip3.5 to `/usr/local/bin`.
