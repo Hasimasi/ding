@@ -45,3 +45,5 @@ Again, read the documentation. You will need to generate an OAuth URL using your
 ## Is it possible to play files from my PC?
 Local file support isn't a thing as of yet. It is in development, however.
 
+## Getting "SSL: CERTIFICATE_VERIFY_FAILED", what should I do?
+Download [this file](https://support.comodo.com/index.php?/Knowledgebase/Article/GetAttachment/969/821026) and install it on your system. Then shutdown the bot and start it again.
