@@ -12,7 +12,7 @@ Feel free to just use the su command if you know what you're doing though. If no
 `apt-get install git`  
 
 # Installing Python 3.5 on your Raspberry Pi
-Raspbian does not have the correct version of Python installed out of the box, so we are going to install it manually by ourselves. But first we're starting with getting everything up to date. To do this enter the following steps into the shell.
+Raspbian does not have the correct version of Python installed out of the box, so we are going to install it manually by ourselves. But first, we're starting with getting everything up to date. To do this enter the following steps into the shell.
 
 `sudo apt-get update`  
 `sudo apt-get upgrade -y`  
@@ -52,7 +52,7 @@ Congratulations, now you have installed Python 3.5.
 
 ## Installing pip
 
-If you want to use pip for you Python 3.5 installation let's install it.
+If you want to use pip for your Python 3.5 installation let's install it.
 Going home:  
 `cd ~`  
 Downloading needful script:    
@@ -107,7 +107,7 @@ We only need to do partial installations from the linux tutorials now, since we 
 `sudo apt-get install libopus-dev libffi-dev libsodium-dev`  
 
 ## Download and setup the MusicBot
-First lets go back home:  
+First, lets go back home:  
 `cd ~`  
 Run the following commands to download MusicBot:
 
