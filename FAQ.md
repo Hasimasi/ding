@@ -10,6 +10,10 @@
 5. Next to **Token**, click **Click to reveal** to see your token
 6. Enter your token inside the **configuration file** for the bot. Need help? [See here](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration#credentials)
 
+<p align="center">
+<img src="http://i.imgur.com/cN4YehO.png">
+</p>
+
 ### How do I add my bot account to a server?
 > **Note**: You can only add a bot account to a server that you have **Manage Server** permissions on.
 
