@@ -31,7 +31,7 @@ Replace `<CLIENT ID>` in the link above with the Client ID from your application
 **For role IDs**, you instead need to start the bot and use the command `!listids`. Role IDs aren't obtainable using Developer Mode.
 
 <p align="center">
-<img src="http://i.imgur.com/QlQ8U3U.png">
+<img src="http://i.imgur.com/GhKpBMQ.gif">
 </p>
 
 ### What sites can the bot play music from?
