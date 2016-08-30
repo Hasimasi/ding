@@ -13,7 +13,7 @@ This page gives information on how to setup **permissions**. When you install th
 The permissions file contains **multiple sections**. The `[Default]` section should **not be renamed**. It contains the default permissions for users of the bot that are not the owner. **Each section is a group**. A user's roles do not allow them to have full permissions to use the bot, **this file does**.
 
 ### Control what commands a group can use
-**Add it** in the `CommandWhitelist` section of the group. Each command should be separated by **spaces**. For example, to allow the default group to use `!play` and `!skip` only:
+**Add it** in the `CommandWhitelist` section of the group. Each command should be separated by **spaces**. For example, to allow a group to use `!play` and `!skip` only:
 
     CommandWhitelist = play skip
 
