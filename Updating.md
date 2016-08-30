@@ -1,3 +1,7 @@
+<p align="center">
+<img src="http://i.imgur.com/WKG0qo0.png">
+</p>
+
 # Table of Contents
 
 - [Introduction](#introduction)
