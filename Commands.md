@@ -1,6 +1,13 @@
-Interacting with MusicBot is done via chat commands.  The bot does not take commands via DMs, with the exception of the `joinserver` command from the owner of the bot.  The owner may have changed the bot's command prefix from the default `!` to something else, as to not interfere with another bot that uses `!` for commands.  Most messages are deleted after some time, as not to fill up the chat with stale information.
+<p align="center">
+<img src="http://i.imgur.com/XM9wM2Z.png">
+</p>
 
-## Command format
+This is a list of the **commands** that can be used to control the MusicBot. You **cannot** use commands in private messages. Every command starts with the prefix that you [configured](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration/). This page assumes your prefix is `!`, the default.
+
+***
+
+## Format
+
 ### `!command [optional argument] [multiple | choice | argument] <required argument>`
 Basic description of what the command does.  Additional information may be provided.
 
