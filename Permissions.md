@@ -1,0 +1,32 @@
+<p align="center">
+<img src="http://i.imgur.com/xSwNPI2.png">
+</p>
+
+This page gives information on how to setup **permissions**. When you install the bot, you will get a file inside the `config` folder named `example_permissions.ini`. This option contains an **example set** of permissions. Edit it, and then **save it as a new file** called `permissions.ini`.
+
+**For Windows users**, please note that file extensions are **hidden by default**, so you may just need to save the file as `permissions` if you are having difficulty - the `.ini` may be hidden.
+
+**Do not edit any configuration file using Notepad or other basic text editors, otherwise it will break. Use something like [Notepad++](https://notepad-plus-plus.org/download/)**.
+
+***
+
+The permissions file contains **multiple sections**. The `[Default]` section should **not be renamed**. It contains the default permissions for users of the bot that are not the owner. **Each section is a group**. A user's roles do not allow them to have full permissions to use the bot, **this file does**.
+
+### Control what commands a group can use
+**Add it** in the `CommandWhitelist` section of the group. Each command should be separated by **spaces**. For example, to allow the default group to use `!play` and `!skip` only:
+
+    CommandWhitelist = play skip
+
+### Add a user to a group
+> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+
+**Add a user's ID** in the `UserList` section of the group. Each user ID should be separated by **spaces**. For example:
+
+    UserList = 154748625350688768 104766296687656960
+
+### Add a role to a group
+> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+
+**Add a role's ID** in the `GrantToRoles` section of the group. Each role ID should be separated by **spaces**. For example:
+
+    UserList = 173129876679688192 183343083063214081
