@@ -42,6 +42,8 @@ Open **Git Bash** (as explained at the end of the last section) and enter the fo
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
 
 ## 3: Configure
+> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+
 **Open** the folder that was created, called `MusicBot`. The folder contains all of the bots files. **Do not delete or rename any files/folders**.
 
 Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
