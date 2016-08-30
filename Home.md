@@ -1,14 +1,20 @@
-# Welcome to the MusicBot wiki!
+### Welcome to the MusicBot Wiki
+This wiki is designed to help you install, configure and troubleshoot issues with the MusicBot. **Please read the pages on the sidebar to the right** if you have questions or issues.
 
-**THIS WIKI IS A WIP.** Articles are still being created and may not work as expected. Sorry for the inconvenience.
+***
 
-Here you will find detailed guides on how to install and use MusicBot on your computer or external server.
+### Installation Guides
 
-### I need help!
-Check out the [Help](https://github.com/SexualRhinoceros/MusicBot/wiki/Help) page in the wiki.
+<p align="center">
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Windows"><img src="http://i.imgur.com/H3c2tJ8.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Ubuntu"><img src="http://i.imgur.com/iqvMAWb.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-OSX"><img src="http://i.imgur.com/9vjcnNY.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Raspbian"><img src="http://i.imgur.com/v8FctVF.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Debian"><img src="http://i.imgur.com/OUwHaXO.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Docker"><img src="http://i.imgur.com/L6WQOD2.png"></a>
+</p>
 
-OR
+***
 
-Our community has a Discord server filled with helpful people who can help you if you get stuck on one of these guides. You can join the server with this invite: ["Rhino Help Server"](http://discord.me/rhinohelp).
-
-#### If you're planning on using an official "bot" account (the ones with the 'bot' tags) make sure you read the documentation for bot accounts found [here.](https://discordapp.com/developers/docs/intro)
+### Need help?
+The information on the wiki pages accessible through the sidebar on the right **may contain answers to your questions**. Please read them. **If you still have an issue**, join our [Discord server](http://discord.me/rhinohelp).
