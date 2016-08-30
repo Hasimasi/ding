@@ -1,121 +1,51 @@
-Before starting make sure you have:
+<p align="center">
+<img src="http://i.imgur.com/OUwHaXO.png">
+</p>
 
- * 30 minutes of time
- * A device running Debian jessie or knowledge on how to apply this guide to other Debian versions
- * Basic knowledge on using the command line in Debian
+<h1 align="center">Debian Jessie</h1>
+<p align="center">Some information may not be applicable to older versions of Debian.</p>
+<p align="center">This guide assumes that you have knowledge of Debian's command line.</p>
 
-# 1. Install dependencies
+## 1: Dependencies
+The bot requires **other software** installed on your Debian machine. You should **run the following commands** in Debian's console in order.
 
-## ffmpeg and x264 codecs
+    sudo apt-get install git libopus-dev libffi-dev libsodium-dev -y
+    sudo apt-get -t jessie-backports install ffmpeg x264 -y
+    sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl -y
 
-`$ sudo apt-get -t jessie-backports install ffmpeg x264 -y`
+## 1.a: Python
+Debian doesn't come with the correct version of Python out of the box. **We will install the correct version ourselves**.
 
-## All other dependencies
-`$ sudo apt-get install git libopus-dev libffi-dev libsodium-dev -y`
+* [Download this tarball](https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz) and save it somewhere
 
-# 2. Build python 3.5 from source
+**Extract it**:
 
-You *must* have python 3.5.0+ to run MusicBot, but the `python3` package is only python 3.4.
+    tar -xvf Python-3.5.2.tgz
+    cd Python-3.5.2
 
-## Install build dependencies
+**Build it**:
 
-The following command is a single line.
+    sudo ./configure
+    sudo make
+    sudo make altinstall
 
-`$ sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl -y`
+Python 3.5 and pip will have been **installed** to `/usr/local/bin` now.
 
-## Download latest python 3 source
+## 2. Clone
 
-Go to [this page](https://www.python.org/downloads/source/) and click the link that says "Latest Python 3 Release - Python 3.5.x" where `x` is some number. Scroll down and copy the download link "Gzipped source tarball" and download it somewhere.
+Now that the system dependencies out of the way, **run the following commands** to install the bot in your home directory and install the Python dependencies required:
 
-Extract the tarball (remember, `x` is some number):
+    cd ~
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
+    cd MusicBot
+    sudo -H pip3.5 install --upgrade -r requirements.txt
 
-```
-$ tar -xvf Python-3.5.x.tgz
-$ cd Python-3.5.x
-```
-
-## Build
-
-```
-$ sudo ./configure
-$ sudo make
-$ sudo make altinstall
-```
-
-This will install python3.5 and pip3.5 to `/usr/local/bin`.
-
-# 3. Install the bot
-
-## Fetch the bot source from Github
-
-Determine where you want to install the bot, such as `/srv/rhinobot`. This location will be referred to as `<install_dir>` from now on; replace it the location you decided on. If your install dir is your home directory, you can leave `sudo` off of the following commands.
-
-```
-$ sudo git clone https://github.com/SexualRhinoceros/MusicBot.git <install_dir>
-$ cd <install_dir>
-$ git checkout master
-```
-
-## Install Python dependencies
-
-You'll most likely have to use `sudo` here, even if you are installing to your home directory.
-
-```
-$ sudo pip3.5 install -r requirements.txt
-```
-
-# 4. Configure the bot
-
+## 3: Configure
 > **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
-At this point, you need to create your bot's `config/options.ini` file with your bot token and other settings. If you are unsure of how to do this, refer to the end of the [generic Linux guide](https://github.com/SexualRhinoceros/MusicBot/wiki/Installation-guide-for-Ubuntu-14.04-and-other-versions#2b-change-configuration-file).
+Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
 
-# 5. (Optional) Set up the bot to run on computer boot
+## 4: Start
+You can start your bot by running this command:
 
-You should be able to run the bot with the commands in section 6, but if you'd like your bot to run automatically when the computer is turned on, follow these optional steps. If you don't care about this, skip this step.
-
-Create the file `/etc/systemd/system/rhinobot.service` with the following contents (you will need sudo for this). Replace both instances of `<install_dir>` with your full installation directory (such as `/srv/rhinobot`):
-
-```
-[Unit]
-Description=RhinoBot
-After=multi-user.target
-[Service]
-WorkingDirectory=<install_dir>
-User=root
-Group=root
-ExecStart=/usr/local/bin/python3.5 <install_dir>/run.py
-Type=idle
-Restart=always
-RestartSec=15
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Finally, run the following command:
-
-```
-$ sudo systemctl enable rhinobot.service
-```
-
-# 6. Done!
-
-You should now be able to run the bot. If you followed section 5, you can run the bot with:
-
-```
-$ sudo service rhinobot start
-```
-
-And you can check if your bot is currently running with
-
-```
-$ sudo service rhinobot status
-```
-
-If you skipped section 5, you can run the bot like so (remember your install directory as noted in section 3):
-
-```
-$ cd <install_dir>
-$ sudo python3.5 run.py 
-```
+    python3.5 run.py
