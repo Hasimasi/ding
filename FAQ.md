@@ -25,6 +25,13 @@ The link to add your bot account to a server is **provided in the console window
 
 Replace `<CLIENT ID>` in the link above with the Client ID from your application page, and then go to the URL on a browser. There, you'll be able to add it to servers.
 
+### How do I get an ID?
+**To get IDs**, turn on Developer Mode in the Discord client (`User Settings` -> `Appearance`) and then right-click your name/icon **anywhere** in the client and select `Copy ID`.
+
+<p align="center">
+<img src="http://i.imgur.com/QlQ8U3U.png">
+</p>
+
 ### Does the bot support Spotify, Deezer, etc?
 **No**. This is mostly because it violates the Terms of Service agreements of those services.
 
