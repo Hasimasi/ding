@@ -25,6 +25,8 @@ Download and navigate into the latest version of the MusicBot using the followin
 
 ### 2.a: Change the configuration file
 
+> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+
 The configuration files are located in the `config` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy and rename these files to `options.ini` and `permissions.ini` respectively, then edit them. 
 
 ![Music Bot Config Folder](http://i.imgur.com/GnzWRNG.png)
@@ -34,8 +36,6 @@ Open options.ini in a text editor of your choosing from the one you downloaded a
 Configure the file however you want, it should explain everything you need. The two things you MUST change are the bot's Token and your OwnerID. Begin by making the following changes to the to these lines:
 
 ![Changing your options.ini](http://i.imgur.com/GoD8bGK.png)
-
-![Getting your token](http://i.imgur.com/cN4YehO.png)
 
 If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
 
