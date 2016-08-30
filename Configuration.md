@@ -1,79 +1,105 @@
+<p align="center">
+<img src="http://i.imgur.com/lUGD3uG.png">
+</p>
+
+This page gives information on how to **configure** the MusicBot. When you install the bot, you will get a file inside the `config` folder named `example_options.ini`. You should open this file, **configure the options within**, and then **save it as a new file** called `options.ini`.
+
+If the bot does not detect the `options.ini` file when it starts, then it will automatically copy it into your folder. **For Windows users**, please note that file extensions are **hidden by default**, so you may just need to save the file as `options` if you are having difficulty - the `.ini` may be hidden.
+
+***
+
 ## Credentials
 
-Public Bots (Bots that run on more than just your personal servers) must use a Discord Developer Bot Account or risk getting shutdown by the Discord Developers.  To use the bot with a bot account, you must supply a bot token, which can be obtained through [creating a bot user](https://discordapp.com/developers/applications/me).  The token key is the third key in the configuration file (options.ini)
+If you are using a **normal user account** for your bot, add a **semi-colon** at the start of the `Token =` line and **remove** the semi-colons at the start of the the lines for `Email =` and `Password =`. You should enter the accounts email and password after the equal signs of the appropriate lines. For example:
 
-    Token = bot_token
+    ;Token =
+    Email = hello@hello.com
+    Password = test
 
-However, the bot can also be used with a standard Discord Account on personal servers.  If you choose to use a User Account with the bot, you must supply the bot account's username and password 
+If you are using a **bot account**, which you **should be using**, you **do not** have to change anything from the example options file. The `Token =` line should **not** have a semi-colon at the start, while the `Email =` and `Password =` line should. You should enter the bot account's **token** after `Token =`. For example:
 
-    [Credentials]
-    Username = your_bots_email@foo.com
-    Password = bots_pass     
-***Note:*** *While this is still a viable option we are recommending using an oAuth BOT application instead as this is what the Discord dev's are wanting bot accounts to use.*
+    Token = MTc0ODcyPOWyNzg3MzYzODQx.DlaYdr.9PuLx1x9LAS979axVXTVfrRE5nL
+
+<p align="center">
+<img src="http://i.imgur.com/Y0GXcJQ.png">
+</p>
 
 ## Permissions
 
-You need your id, not the bot's id.  The bot does not own the bot, you do.
-If you don't know how to get this, join the help server (link in the readme) *with the owner's account* and type !id in chat. You should get something along the lines of: 
-> OwnerName's ID is 12300000000000789
+### OwnerID
 
-    [Permissions]
-    OwnerID = 123...789
+This is the ID of your **Discord user**. To obtain this, [turn on Developer Mode](http://i.imgur.com/QlQ8U3U.png) in the Discord client (`User Settings` -> `Appearance`) and then right-click your name/icon **anywhere** in the client and select `Copy ID`. Example:
+
+    OwnerID = 154748625350688768
+
+This is **not** the bot account itself. The owner should be **you**. This is the person that will have all permissions and ultimate control over the bot. **There cannot be multiple owners - use [permissions](https://github.com/SexualRhinoceros/MusicBot/wiki/Permissions/) for that**.
 
 ## Chat
 
-Change this if you don't want commands to trigger another bot on the same server. Ex: One bot uses ~play, ~skip, etc and you want your bot to use !play, !skip, etc.  
-    
-    [Chat]
+### CommandPrefix
+
+This is the **prefix** that will be used in commands. For example, if my prefix was `!`, then the `play` command would be used by typing `!play`. If my prefix was `#`, I'd use `#play` instead. Example:
+
     CommandPrefix = !
-   
-This means you would type !play, !skip, etc.  
-This explanation exists because it seems no one knows what **pre**-fix means.  
-  
-You can restrict the bot to only listen to certain text channels. By default, it will listen on all channels in the server its in.  
-To find the text channel(s) you want you bot to listen on, go to the server and simply right click on the text channel and copy link. It should look like:
-> discordapp.com/channels/129488835553334912/143335558889992656  
 
-Copy and paste the **second** set of numbers, and separate multiple text channels with single spaces.  
-*Uncomment (remove the ; at the start of the line) and add channel IDs to enable.*  
+### BindToChannels
 
-    ;BindToChannels = 
+> **Note:** To use this option, **uncomment it** (remove the semi-colon at the start of the line)
 
-In the `review` version of the bot, you can make the bot autojoin voice channels on start. If you are using a bot account, the bot can join multiple voice channels (one per server). To get an ID of a voice channel, use `!listids`.
-*Uncomment (remove the ; at the start of the line) and add channel IDs to enable.*  
+If you want your bot to **only work and reply in certain text channels**, this is the option you use. You should enter the IDs of each channel that you want the bot to listen to. To obtain channel IDs, [turn on Developer Mode](http://i.imgur.com/QlQ8U3U.png) in the Discord client (`User Settings` -> `Appearance`) and then right-click the **text channel** in the client and select `Copy ID`. Example:
 
-    ;AutojoinChannels =
+    BindToChannels = 129489631539494912
+
+### AutojoinChannels
+
+> **Note:** To use this option, **uncomment it** (remove the semi-colon at the start of the line)
+
+If you want your bot to **automatically join voice channels**, this is the option you use. You should enter the IDs of each voice channel that you want you bot to join when it is started. If you are using a **bot account**, you can enter multiple IDs for multiple servers (**one voice channel per server**). To obtain channel IDs, [turn on Developer Mode](http://i.imgur.com/QlQ8U3U.png) in the Discord client (`User Settings` -> `Appearance`) and then right-click the **voice channel** in the client and select `Copy ID`. Example:
+
+    AutojoinChannels = 129489636056629248
 
 ## MusicBot
 
-The starting volume of the bot. Scale of .01 to 1.0, 1.0 being 100% volume.  
+### DefaultVolume
 
-    [MusicBot]
-    DefaultVolume = 0.45  
+This is the **default volume** that your bot will play music at when it is started. This can be **any value** between `0.01` and `1.0`. The **recommended volume** is `0.15`.
 
-Skips required to skip a song.  Whichever is lower will be used.  
-Skip ratio refers to the percent of non-deafened, non-owner users in the voice channel needed to skip a song.  
+### WhiteListCheck
 
-    SkipsRequired = 4
-    SkipRatio = 0.5
+This decides whether or not the bot can **only** be used by **whitelisted users**. This feature is deprecated, and we won't provide much help for it. Use [permissions](https://github.com/SexualRhinoceros/MusicBot/wiki/Permissions/) instead. **To set up which users are whitelisted**, put their IDs in the `whitelist.txt` file in the `config` folder (one per line).
 
-If no, deletes videos after they have been played. If the video is still in the queue after playing, the bot will avoid redownloading.  
+### SkipsRequired & SkipRatio
 
-    SaveVideos = yes  
+This decides the **required amount of votes** needed for a song to skip. The lower value out of `SkipsRequired` or `SkipRatio` will be used. Skip ratio refers to the percentage of **non-deafened**, **non-owner** members in a voice channel.
 
-Mentions the user who queued a song when the song plays.  
-  
-    NowPlayingMentions = no  
+### SaveVideos
 
-On startup, if the owner is in a voice channel, join that channel. Auto joining a server without the owner being online  is being worked on.  
+This option decides whether **songs should be saved**. Turning this on will **sacrifice disk space** in favour of saving bandwidth, while having it off will **use more bandwidth**. If a song is **saved** (also known as 'cached'), the bot will play the saved version instead of downloading it again.
 
-    AutoSummon = yes
+### NowPlayingMentions
 
-Play random songs out of included playlist when nothing is queued.  
+This option decides if the bot should **mention the user that requested a song** when their song is played.
 
-    UseAutoPlaylist = yes
+### AutoSummon
 
-Debug prints extra output in the console and some errors to chat.  
-This option is a work in progress, don't expect much.  
+This option decides if the bot should **automatically join the owner's voice channel**. The owner is the user defined in the `OwnerID` option previously. If this option and `AutojoinChannels` is enabled (and the option has an ID that is in the same channel as the owner), the bot will **join the owner's channel** instead.
 
-    DebugMode = no
+### UseAutoPlaylist
+
+This option decides if the bot should play the **default playlist of music** after joining a voice channel. This playlist is defined in the `autoplaylist.txt` file. One link should be entered **per line** in this file.
+
+### AutoPause
+
+This option decides if the bot should **pause playing music if there is nobody else in the channel**.
+
+### DeleteMessages
+
+This option decides if the bot should **delete its own messages** after a period of time.
+
+### DeleteInvoking
+
+This option decides if the bot should **delete other user's messages that triggered a bot response** after a period of time. You need to have `DeleteMessages` enabled for this.
+
+### DebugMode
+
+Turning this option on will **print additional debug information** to the console, for use when there are issues and errors that should be reported.
