@@ -74,7 +74,7 @@ This will be the first thing you see when it opens.
 
 ### 1.e: Installing dependencies
 
-To install dependencies, enter the following commands **without sudo**
+To install dependencies, enter the following commands in Terminal.app:
 
     brew install git
     brew install ffmpeg
