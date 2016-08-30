@@ -15,7 +15,10 @@ This wiki is designed to help you install, configure and troubleshoot issues wit
 
 <p align="center">
 <a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Commands"><img src="http://i.imgur.com/XM9wM2Z.png"></a>
-<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Updating"><img src="http://i.imgur.com/WKG0qo0.png">
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration"><img src="http://i.imgur.com/lUGD3uG.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Permissions"><img src="http://i.imgur.com/xSwNPI2.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Updating"><img src="http://i.imgur.com/WKG0qo0.png"></a>
+<a href="https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ"><img src="http://i.imgur.com/iVHLcAU.png"></a>
 </p>
 
 ### Need help?
