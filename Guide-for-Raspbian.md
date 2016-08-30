@@ -121,6 +121,8 @@ This next step is somewhat optional, as MusicBot will attempt to do this for you
 This installs the various python dependencies used by the bot.
 
 # Configuring the bot
+> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+
 For configuring the bot refer to the end of the [linux / ubuntu tutorial](https://github.com/SexualRhinoceros/MusicBot/wiki/Installation-guide-for-Ubuntu-14.04-and-other-versions#2b-change-configuration-file).
 
 # Running the bot
