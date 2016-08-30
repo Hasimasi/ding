@@ -4,6 +4,7 @@
 
 <h1 align="center">Raspbian (Raspberry Pi 2 or 3 B)</h1>
 <p align="center">Some information may not be applicable to other Raspberry Pis.</p>
+<p align="center">This guide assumes that you have knowledge of how to connect to your Raspberry Pi using an SSH and (S)FTP client.</p>
 
 ## 1: Dependencies
 The bot requires **other software** installed on your Raspberry Pi. Run these commands:
