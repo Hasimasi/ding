@@ -34,6 +34,9 @@ Replace `<CLIENT ID>` in the link above with the Client ID from your application
 <img src="http://i.imgur.com/QlQ8U3U.png">
 </p>
 
+### What sites can the bot play music from?
+The bot uses **youtube-dl**. View [list of supported sites](https://rg3.github.io/youtube-dl/supportedsites.html).
+
 ### Does the bot support Spotify, Deezer, etc?
 **No**. This is mostly because it violates the Terms of Service agreements of those services.
 
