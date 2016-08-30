@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">OS X Yosemite and above</h1>
-<p align="center">Some information may not be applicable to lower versions of OS X.</p>
+<p align="center">Some information may not be applicable to older versions of OS X.</p>
 
 # Table of Contents
 
