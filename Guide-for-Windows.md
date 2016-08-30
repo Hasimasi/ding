@@ -1,124 +1,52 @@
-This guide is for **Windows 7 and above**. Some information may not be applicable to versions of Windows lower than this.
+<p align="center">
+<img src="http://i.imgur.com/H3c2tJ8.png">
+</p>
 
-# Table of Contents
+<h1 align="center">Windows 7 and above</h1>
+<p align="center">Some information may not be applicable to older versions of Windows.</p>
 
-2. [Step 1: Installing Python](#step-1-installing-python-351)
-    - [1.a Download Python installer](#1a-downloading-python-installer)
-    - [1.b: Install Python](#1b-install-python-351)
-    - [1.c: Install Git](#1c-install-git)
-3. [Step 2: Install and configure MusicBot](#step-2-install-and-configure-musicbot)
-    - [2.a: Download MusicBot](#2a-download-musicbot)
-    - [2.b: Change configuration file](#2b-change-configuration-file)
-    - [2.c: Start the bot!](#2c-start-the-bot)
+## 1: Dependencies
+The bot requires **other software** installed on your Windows computer to run successfully.
 
-[Video Walk through](https://youtu.be/x701z0evpOc): 
-*This is a video that goes along side the Wiki, it follows every step on this wiki and just to give you visual aid if you need it.*
-
-## Step 1: Installing Python 3.5.1
-
-Python 3.5+ is required to run MusicBot.
-
-### 1.a: Downloading Python installer
-
-You can download the Windows installer for your appropriate system architecture here:
+### 1.a: Python
+To install the correct version of Python, click on the link for the version that is right for your system.
 
 * 32-bit: https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe
 * 64-bit: https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe
 
-### 1.b: Install Python 3.5.1
+If you don't know your system's architecture, see this [How-To Geek article](http://www.howtogeek.com/howto/21726/how-do-i-know-if-im-running-32-bit-or-64-bit-windows-answers/).
 
-Open the installer you downloaded in step 1.a. When the installer opens, ensure that the checkboxes *'Install launcher for all users (recommended)'* and '*Add Python 3.5 to PATH*' are both **checked** and then click the big *Install Now* button.
+**Run the setup program** by double-clicking it. You'll go through a series of prompts. **Make sure you check the boxes**:
 
-![Python installer initial screen](http://i.imgur.com/48qmRJ0.png)
+* `Install launcher for all users (recommended)`
+* `Add Python 3.5 to PATH`
 
-**If a UAC prompt appears, click *'yes'* to start installation.**
+At the end of the installation, click **Close** to exit the setup wizard.
 
-Python should begin to install and you should see the progress bar slowly fill as the installation takes place.
+### 1.b: Git
+Git is needed to download the bot from GitHub. We will **only help you in future** if you download the bot using this method, as it is required to easily update the bot when needed.
 
-![Python installer progress bar](http://i.imgur.com/bSUIO10.png)
+* Download Git for Windows here: <https://git-for-windows.github.io/>
 
-Once that is done, click the button labeled *Close* to finish installation.
+**Run the setup program** by double-clicking it. You'll go through a series of prompts. **Make sure you check the boxes**:
 
-![Python installer completion screen](http://i.imgur.com/zb9s0gA.png)
+* `Use Git from Git Bash only` (under **Adjusting your PATH environment**)
+* `Checkout Windows-style, commit Unix-style endings` (under **Configure the line ending conversions**)
+* `Use MinTTY (the default terminal MSYS2)` (under **Configuring the terminal emulator to use with Git Bash**)
 
-You have now successfully installed Python onto your machine! :smile:
+At the end of the installation, you will **be able to use Git Bash** by **right-clicking a folder** and selecting `Git Bash` (or `Git Bash Here`) from the menu.
 
-### 1.c: Install Git
-
-If you don't already have it, you need to install Git for Windows (Git Bash). [Download it here](https://git-for-windows.github.io/).
-
-During the installation, select these options (which should be selected by default):
-* Use Git from Git Bash only
-
-![Use Git from Git Bash only](http://i.imgur.com/k1spKNz.png)
-
-* Checkout Windows-style, commit Unix-style endings
-
-![Checkout Windows-style, commit Unix-style endings](http://i.imgur.com/dKTFXBI.png)
-
-* Use MinTTY (the default terminal MSYS2)
-
-![Use MinTTY](http://i.imgur.com/P0SaClk.png)
-
-To open Git Bash, open Windows Explorer in your designated folder and right-click. You will get the option `Git Bash` on the context menu. Click it to open a new shell.
-
-![Git Bash context menu](http://i.imgur.com/ptlggmn.png) 
-
-## Step 2: Install and configure MusicBot
-
-### 2.a: Download MusicBot
-
-With Git Bash open, run the following command to download MusicBot:
+## 2: Clone
+Open **Git Bash** (as explained at the end of the last section) and enter the following command to **clone** (download) the MusicBot. This will place it in a new folder in the folder you're in, called `MusicBot`.
 
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
 
-### 2.b: Make a new Bot Acccount/Application
+## 3: Configure
+**Open** the folder that was created, called `MusicBot`. The folder contains all of the bots files. **Do not delete or rename any files/folders**.
 
-Go to https://discordapp.com/developers/applications/me and create a new application. 
+Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
 
-Watch [this video](https://www.youtube.com/watch?v=yQhdjAWmObM) for reference on how to make a new bot user. 
+## 4: Run
+In the main folder (called `MusicBot`), **double-click** `update_deps.bat` to install the required Python dependencies. After it is finished, you can **close the window** and then **double-click** `runbot.bat` to run the bot.
 
-**Note:** When creating the Bot User, remember to untick "Require OAuth2 Code Grant". This is for multiple scopes, but since you only use one it will break the authorization if you tick it.
-
-![Untick OAuth2 Code Grant](http://i.imgur.com/9KNPXWA.png)
-
-After you've made your bot account, you need to add it to your server! 
-
-You then need to generate an OAuth link. Replace `<CLIENT_ID>` with your bot's Client/Application ID in this link:
-
-`https://discordapp.com/oauth2/authorize?client_id=<CLIENT_ID>&scope=bot`
-
-It should look something like this when you're done: 
-
-`https://discordapp.com/oauth2/authorize?client_id=00000000000000000&scope=bot`
-
-Take this link and put it in a browser, login to your own discord account (if required) and select the server to add the bot to. 
-
-**NOTE:** You need to have `Manage Server` permissions in the server you want to invite the bot to. 
-
-
-### 2.c: Change configuration file
-
-When you have cloned using Git, you will get the MusicBot folder inside the directory. Open it.
-
-![MusicBot contents](http://i.imgur.com/Tm0NEoW.png)
-
-In the `config` folder, if there isn't a file called `options.ini`, copy `example_options.ini` and rename the copy to `options.ini`.  Then, open `options.ini` in a text editor OTHER than Windows Notepad, otherwise you'll see a single line full of stuff. I suggest [Notepad++](https://notepad-plus-plus.org "Notepad++").  Editing the options file with windows notepad will mangle the content and the bot won't be able to read it.
-
-Configure the file however you want, it should explain everything you need.  You MUST change OwnerID, and add a bot token. 
-
-![Changing your options.ini](http://i.imgur.com/7NBtTdf.png)
-
-![Getting your token](http://i.imgur.com/cN4YehO.png)
-
-**Make sure you save the file after doing this. Some people forget to. It should be common sense.**
-
-If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
-
-### 2.d: Start the bot!
-
-Go back to the main MusicBot directory and double click `runbot.bat`. If you don't see any errors, that means everything is good and running correctly! You don't need to do anything else! :smile: You can check out the [wiki articles](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to find out how to use your bot.  If you see an error and you don't know what it means, ask about it on the help server.
-
-**NOTE:** By default, the `AutoSummon` option is enabled.  This means the bot will automatically join the owner's voice channel. If the owner isn't in a voice channel, join one and use the command `!summon` to bring the bot into your channel.
-
-If you close the console, turn off your computer or put it to sleep the bot will go away. To keep this bot running 24/7 you must have it running on a computer or server. 
+If you **close** the Command Prompt, your bot will stop working. This window is required to be open for the bot to run. The bot will also stop if you turn your computer off, sleep, or hibernate it. To avoid these issues, you can buy a dedicated server.
