@@ -1,3 +1,5 @@
+This guide is for **Windows 7 and above**. Some information may not be applicable to versions of Windows lower than this.
+
 # Table of Contents
 
 2. [Step 1: Installing Python](#step-1-installing-python-351)
