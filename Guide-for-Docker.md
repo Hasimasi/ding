@@ -1,65 +1,34 @@
-# Table of Contents
+<p align="center">
+<img src="http://i.imgur.com/L6WQOD2.png">
+</p>
 
-[Introduction](#introduction)  
-1. [Step 1: Preparation](#step-1-preparation)  
-2. [Step 2: Download and setup](#step-2-download-and-setup)  
-3. [Step 3: Build the Docker image](#step-3-build-the-docker-image)  
-4. [Step 4: Run the MusicBot](#step-4-run-the-musicbot)  
+<h1 align="center">Docker</h1>
 
-# Introduction
+## 1: Clone
+The only requirement is that you have [Docker](https://docs.docker.com/mac/) installed. You do not require anything else. **Download and navigate into the latest version of the MusicBot using the following commands**:
 
-Docker is a way to virtualize the Musicbot. By using Docker you do not have to worry about any dependencies or whether it may run on your platform or not. Simply use the docker image and run the music bot.
-
-# Installation
-
-## Step 1: Preparation
-
-The only requirement is that you have [Docker](https://docs.docker.com/mac/) installed. You do not require anything else. 
-
-## Step 2: Download and setup
-
-Download and navigate into the latest version of the MusicBot using the following command:
-
-    git clone https://github.com/SexualRhinoceros/MusicBot.git 
+    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
     cd MusicBot
 
-### 2.a: Change the configuration file
+## 2: Configure
 
 > **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
-The configuration files are located in the `config` folder. There are two files, `example_options.ini` and `example_permissions.ini` that tell you how to configure the bot. You should copy and rename these files to `options.ini` and `permissions.ini` respectively, then edit them. 
+The folder we're in contains all of the bots files. **Do not delete or rename any files/folders**. We now need to configure the bot.
 
-![Music Bot Config Folder](http://i.imgur.com/GnzWRNG.png)
+Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
 
-Open options.ini in a text editor of your choosing from the one you downloaded at the beginning of this guide. I suggest TextWrangler or Atom.
-
-Configure the file however you want, it should explain everything you need. The two things you MUST change are the bot's Token and your OwnerID. Begin by making the following changes to the to these lines:
-
-![Changing your options.ini](http://i.imgur.com/GoD8bGK.png)
-
-If you have any further questions, you can ask on the [help server](https://discord.gg/0iqN3da4zqpJpuY0).
-
-## Step 3: Build the Docker image
-
-From within the root project directory, run the following command:
+## 3: Docker Image
+From within the root project directory (named `MusicBot`), run the following command to build the docker image:
 
       docker build -t musicbot .
 
-This builds the Docker image for the music bot, and will take a few minutes to complete.
+## 4: Start
 
-## Step 4: Run the MusicBot
-
-From within the root project directory, run the following command:
+Now run the following command to start the bot:
 
       docker run -d -v $(pwd)/config:/musicBot/config musicbot
-
-Your bot should now be running in the background!
 
 To stop MusicBot, run the following command: 
 
       docker kill $(docker ps -q -f ancestor=musicbot)
-  
-
-Check out the [wiki article](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands-list "Commands list") to learn how to use your bot!
-
-
