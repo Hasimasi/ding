@@ -5,23 +5,6 @@
 <h1 align="center">OS X Yosemite and above</h1>
 <p align="center">Some information may not be applicable to older versions of OS X.</p>
 
-# Table of Contents
-
-[Introduction](#introduction)
-
-1. [Step 1: Preparation](#step-1-preparation)
-    - [1.a: Installing a TextEditor](#1a-installing-a-texteditor)
-    - [1.b: Installing Homebrew](#1b-installing-homebrew)
-    - [1.c: Installing xcode-select](#1c-installing-xcode-select)
-    - [1.d: Installing Python](#1d-installing-python)
-    - [1.e: Installing dependencies](#1e-installing-dependencies)
-2. [Step 2: Download and setup MusicBot](#2-download-and-setup-musicbot)
-    - [2.a: Allowing Terminal to Run Files](#2a-allowing-terminal-to-run-files)
-    - [2.b: Install python dependencies](#2b-install-python-dependencies)
-    - [2.c: Change configuration file](#2c-change-configuration-files)
-3. [Step 3: Start the bot](#3-start-the-bot)
-4. [Step 4: Running the bot in a Screen (Optional)](#4-running-the-bot-in-a-screen-optional)
-
 # Introduction
 
 Installing the bot on OSX requires the downloading of several libraries. These libraries are best managed with [Homebrew](http://brew.sh/). Homebrew and a basic text editor are required for this MusicBot to function.
