@@ -1,3 +1,7 @@
+<p align="center">
+<img src="http://i.imgur.com/iVHLcAU.png">
+</p>
+
 ## How do I get an ID of ___?
 Do these in any Discord text channel that you can view/post messages in.
 
