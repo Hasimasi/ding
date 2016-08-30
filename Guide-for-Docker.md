@@ -21,14 +21,14 @@ Inside the bot's folder is another folder called `config`. Open it, and then ope
 ## 3: Docker Image
 From within the root project directory (named `MusicBot`), run the following command to build the docker image:
 
-      docker build -t musicbot .
+    docker build -t musicbot .
 
 ## 4: Start
 
 Now run the following command to start the bot:
 
-      docker run -d -v $(pwd)/config:/musicBot/config musicbot
+    docker run -d -v $(pwd)/config:/musicBot/config musicbot
 
 To stop MusicBot, run the following command: 
 
-      docker kill $(docker ps -q -f ancestor=musicbot)
+    docker kill $(docker ps -q -f ancestor=musicbot)
