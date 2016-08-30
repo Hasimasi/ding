@@ -29,8 +29,9 @@ If you are using a **bot account**, which you **should be using**, you **do not*
 ## Permissions
 
 ### OwnerID
+> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
 
-This is the ID of your **Discord user**. To obtain this, [turn on Developer Mode](http://i.imgur.com/QlQ8U3U.png) in the Discord client (`User Settings` -> `Appearance`) and then right-click your name/icon **anywhere** in the client and select `Copy ID`. Example:
+This is the ID of your **Discord user**. Example:
 
     OwnerID = 154748625350688768
 
@@ -48,7 +49,9 @@ This is the **prefix** that will be used in commands. For example, if my prefix 
 
 > **Note:** To use this option, **uncomment it** (remove the semi-colon at the start of the line)
 
-If you want your bot to **only work and reply in certain text channels**, this is the option you use. You should enter the IDs of each channel that you want the bot to listen to. To obtain channel IDs, [turn on Developer Mode](http://i.imgur.com/QlQ8U3U.png) in the Discord client (`User Settings` -> `Appearance`) and then right-click the **text channel** in the client and select `Copy ID`. Example:
+> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+
+If you want your bot to **only work and reply in certain text channels**, this is the option you use. You should enter the IDs of each channel that you want the bot to listen to. Example:
 
     BindToChannels = 129489631539494912
 
@@ -56,7 +59,9 @@ If you want your bot to **only work and reply in certain text channels**, this i
 
 > **Note:** To use this option, **uncomment it** (remove the semi-colon at the start of the line)
 
-If you want your bot to **automatically join voice channels**, this is the option you use. You should enter the IDs of each voice channel that you want you bot to join when it is started. If you are using a **bot account**, you can enter multiple IDs for multiple servers (**one voice channel per server**). To obtain channel IDs, [turn on Developer Mode](http://i.imgur.com/QlQ8U3U.png) in the Discord client (`User Settings` -> `Appearance`) and then right-click the **voice channel** in the client and select `Copy ID`. Example:
+> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+
+If you want your bot to **automatically join voice channels**, this is the option you use. You should enter the IDs of each voice channel that you want you bot to join when it is started. If you are using a **bot account**, you can enter multiple IDs for multiple servers (**one voice channel per server**). Example:
 
     AutojoinChannels = 129489636056629248
 
