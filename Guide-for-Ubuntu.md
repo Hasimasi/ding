@@ -107,23 +107,7 @@ If you have any further questions, you can ask on the [help server](https://disc
 
 ## 3: Start the bot 
 
-**If you haven't already done so, you will need to create a Discord oAuth2 BOT account.**    
-Go to https://discordapp.com/developers/applications/me and create a new application.     
-Use this video for reference: https://www.youtube.com/watch?v=yQhdjAWmObM     
-
-To invite your bot to your server replace `<CLIENT ID>` with your bot's client ID in this link:    
-`https://discordapp.com/oauth2/authorize?&client_id=<CLIENT ID>&scope=bot&permissions=0`     
-
-**Note:** When creating the Bot User, remember to untick "Require OAuth2 Code Grant". This is for multiple scopes, but since you only use one it will break the authorization if you tick it.
-
-![Untick OAuth2 Code Grant](http://i.imgur.com/9KNPXWA.png)
-
-**Example:**     
-https://discordapp.com/oauth2/authorize?client_id=17000000000000296&scope=bot&permissions=0     
-
-For more info refer to: <https://discordapp.com/developers/docs/topics/oauth2#adding-bots-to-guilds>     
-
-**Note:** You need to have the `Manage Server` permission to add it to a server...     
+> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
 ### 3.a Test the bot (non permanent)
 Go back to the SSH for your server and make sure you're in the `MusicBot` folder (you should see `username@host:~/MusicBot$` or something similar in front of the cursor).
