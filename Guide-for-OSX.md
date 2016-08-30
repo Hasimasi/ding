@@ -1,3 +1,10 @@
+<p align="center">
+<img src="http://i.imgur.com/9vjcnNY.png">
+</p>
+
+<h1 align="center">OS X Yosemite and above</h1>
+<p align="center">Some information may not be applicable to lower versions of OS X.</p>
+
 # Table of Contents
 
 [Introduction](#introduction)
