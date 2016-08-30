@@ -66,6 +66,8 @@ $ sudo pip3.5 install -r requirements.txt
 
 # 4. Configure the bot
 
+> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+
 At this point, you need to create your bot's `config/options.ini` file with your bot token and other settings. If you are unsure of how to do this, refer to the end of the [generic Linux guide](https://github.com/SexualRhinoceros/MusicBot/wiki/Installation-guide-for-Ubuntu-14.04-and-other-versions#2b-change-configuration-file).
 
 # 5. (Optional) Set up the bot to run on computer boot
