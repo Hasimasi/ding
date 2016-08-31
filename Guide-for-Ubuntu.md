@@ -25,14 +25,14 @@ After installing Python, it **should** come with `pip`. You can test this by usi
     wget https://bootstrap.pypa.io/get-pip.py
     sudo python3.5 get-pip.py
 
-## 2: Clone
+## 3: Clone
 
 Run the following commands to download MusicBot. This will place it in a **new folder** called `MusicBot`, which we will immediately enter.
 
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
     cd MusicBot
 
-## 3: Configure
+## 4: Configure
 
 > **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
@@ -40,14 +40,14 @@ The folder we're in contains all of the bots files. **Do not delete or rename an
 
 Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing and upload it back to the Ubuntu machine**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
 
-## 4: Start
+## 5: Start
 You can test that your bot works by running this command:
 
     python3.5 run.py
 
 If you **close your SSH session/console**, the bot will stop running.
 
-### 4.a: Start permanently
+### 5.a: Start permanently
 **If you're already running the bot**, press `CTRL + C` a few times to stop it from running and get you back to being able to use console commands.
 
 There are a **number of options** that can allow you to run the bot **permanently**, so that it continues even if you are not connected to your Ubuntu machine through an SSH client.
