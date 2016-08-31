@@ -13,7 +13,7 @@ Installing the bot on OSX requires the downloading of several libraries. [Homebr
 
 ### 1.a: Python
 
-[ClickHere](https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg) to start downloading Python3.5.2. After downloading, open the `python-3.5.1-macosx10.6.pkg` and complete installation to your computers harddrive.
+[ClickHere](https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg) to start downloading Python3.5.2. After downloading, open the `python-3.5.2-macosx10.6.pkg` and complete installation to your computers harddrive.
 
 ### 1.b: Other dependencies
 
