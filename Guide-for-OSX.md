@@ -45,8 +45,6 @@ cd'ing to the desktop allows you to quickly find your MusicBot folder as it plac
 
 Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
 
-![Music Bot Config Folder](http://i.imgur.com/GnzWRNG.png)
-
 ## 4: Terminal Permissions
 
 In order for Terminal.app to run the .command files needed for the bot you will need to do the following:
@@ -60,7 +58,9 @@ Repeat the above for the `runbot_mac.command` file. You should then be able to d
 
 Example:
 
-![Terminal chmod commands](http://i.imgur.com/qKrlWUt.png)
+<p align="center">
+<img src="http://i.imgur.com/qKrlWUt.png?1">
+</p>
 
 ## 5: Run
 In the main folder (called `MusicBot`), **double-click** `update_macdeps.command` to install the required Python dependencies. After it is finished, you can **close the window** and then **double-click** `runbot_mac.command` to run the bot.
