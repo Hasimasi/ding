@@ -6,7 +6,7 @@ This page gives information on how to **configure** the MusicBot. When you insta
 
 If the bot does not detect the `options.ini` file when it starts, then it will automatically copy it into your folder. **For Windows users**, please note that file extensions are **hidden by default**, so you may just need to save the file as `options` if you are having difficulty - the `.ini` may be hidden.
 
-**Do not edit any configuration file using Notepad or other basic text editors, otherwise it will break. Use something like [Notepad++](https://notepad-plus-plus.org/download/)**.
+**Do not edit any configuration file using Notepad or other basic text editors, otherwise it will break. Use something like [Notepad++](https://notepad-plus-plus.org/download/)** (Windows) **or [Atom](https://atom.io/)** (Windows/Mac/Linux).
 
 ***
 
