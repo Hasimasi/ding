@@ -54,7 +54,7 @@ FFmpeg is needed to stream music to Discord. **Run these commands**:
 
     cd /usr/src
     sudo git clone git://git.videolan.org/x264
-    cd x26
+    cd x264
     sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
     make
     sudo make install
