@@ -47,9 +47,9 @@ The bot uses **youtube-dl**. View [list of supported sites](https://rg3.github.i
 **No**, but this is in the works.
 
 ### Can I modify the bot?
-**Yes**, but please note that we will **not** help you during this process or if something breaks because of it. You can find help with the **discord.py library** that is used by MusicBot on the **Discord API server**: https://discord.gg/KZBHSxz.
+**Yes**, but please note that we will **not** help you during this process or if something breaks because of it. You can find help with the **discord.py library** that is used by MusicBot on the Discord API server by clicking the banner below:
 
-> ***Any modifications are done at <u>your own risk</u>.***
+[![Discord](https://discordapp.com/api/guilds/81384788765712384/widget.png)](https://discord.gg/KZBHSxz)
 
 ### What does `SSL: CERTIFICATE_VERIFY_FAILED` mean?
 You are **missing** an SSL certificate from a major authority. Download [this file](https://support.comodo.com/index.php?/Knowledgebase/Article/GetAttachment/969/821026) and install it on your system. Then shutdown the bot and start it again. **If you still have problems**, see [here](https://github.com/SexualRhinoceros/MusicBot/wiki#need-help).
