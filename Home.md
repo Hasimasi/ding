@@ -23,3 +23,5 @@ This wiki is designed to help you install, configure and troubleshoot issues wit
 
 ### Need help?
 The information on the wiki pages accessible through the sidebar on the right **may contain answers to your questions**. Please read them. **If you still have an issue**, join our [Discord server](http://discord.me/rhinohelp).
+
+[![Discord](https://discordapp.com/api/guilds/129489631539494912/widget.png)](http://discord.me/rhinohelp)
