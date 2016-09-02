@@ -7,3 +7,5 @@ To update the bot, open the **console** (Linux)/**Terminal** (OSX)/**Git Bash** 
     git pull
 
 If you **did not** originally follow our updated guides that require cloning via Git, this command will not work for you. Instead, reinstall the bot properly using the appropriate guide for your operating system on this wiki.
+
+**Make sure to ALWAYS update your dependencies after updating the bot.**
