@@ -29,4 +29,4 @@ The permissions file contains **multiple sections**. The `[Default]` section sho
 
 **Add a role's ID** in the `GrantToRoles` section of the group. Each role ID should be separated by **spaces**. For example:
 
-    UserList = 173129876679688192 183343083063214081
+    GrantToRoles = 173129876679688192 183343083063214081
