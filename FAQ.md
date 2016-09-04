@@ -47,9 +47,7 @@ The bot uses **youtube-dl**. View [list of supported sites](https://rg3.github.i
 **No**, but it will very soon.
 
 ### Can I modify the bot?
-**Yes**, but please note that we will **not** help you during this process or if something breaks because of it. You can find help with the **discord.py library** that is used by MusicBot on the Discord API server by clicking the banner below:
-
-[![Discord](https://discordapp.com/api/guilds/81384788765712384/widget.png)](https://discord.gg/KZBHSxz)
+**Yes**, [read here](https://github.com/SexualRhinoceros/MusicBot/wiki/Modification/).
 
 ### What license does the bot use?
 The bot is licensed under the **MIT License**.
