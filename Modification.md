@@ -69,3 +69,5 @@ Notes about commands:
 If you have issues with and need help with the **discord.py library** that is used by MusicBot, you can join the Discord API server by clicking the banner below:
 
 [![Discord](https://discordapp.com/api/guilds/81384788765712384/widget.png)](https://discord.gg/KZBHSxz)
+
+**Reminder: We will not provide help on OUR help server for issues with modifying the bot**
