@@ -8,7 +8,7 @@
 
 ***
 
-The bot is **open source**. This means that you can edit, and modify the **Python** code to do what you want with it. **We are totally fine with this** - but please note we will not help you in our help server on Discord, if your problem appears to be directly caused by your changes.
+The bot is **open source**. This means that you can edit, and modify the **Python** code to do what you want with it **[within reason](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#what-license-does-the-bot-use)**. **We are totally fine with this** - but please note we will not help you in our help server on Discord, if your problem appears to be directly caused by your changes.
 
 As a small guide, we've written some information below about modifying the bot. The bot uses the libraries `youtube-dl` and `discord.py` to download and stream media, as well as interact with Discord.
 
