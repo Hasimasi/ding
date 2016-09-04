@@ -41,6 +41,7 @@ Our command framework is easy enough to work with. To create a new command, defi
 
 Notes about commands:
 
+* **Any argument given to the function that is NOT in the list above will be counted as a REQUIRED positional argument**
 * **Docstrings are used when using `!help command` or when a user doesn't use the command correctly (e.g missing arguments)**
 
 ### Example: Ping command
