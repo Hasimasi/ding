@@ -39,16 +39,30 @@ Notes about commands:
 
 ### Example: Ping command
 
+```py
     async def cmd_ping(channel):
+        """
+        Usage:
+            {command_prefix}ping
+        Ping command to test latency
+        """
         await self.safe_send_message(channel, "Pong!")
+```
 
 ### Example: Send a message to all servers
 
+```py
     async def cmd_sendall(args, leftover_args):
+        """
+        Usage:
+            {command_prefix}sendall <message>
+        Sends a message to all servers the bot is on
+        """
         if leftover_args:
             args = ' '.join([args, *leftover_args])
         for s in self.servers:
             await self.safe_send_message(s, args)
+```
 
 ***
 
