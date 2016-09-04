@@ -2,23 +2,28 @@
 <img src="http://i.imgur.com/Xluk1hv.png">
 </p>
 
+<p align="center">
+<strong>BEFORE CONTINUING, PLEASE READ <a href="http://discordpy.readthedocs.io/en/latest/api.html">DISCORD.PY'S DOCUMENTATION</a></strong>
+</p>
+
+***
+
 The bot is **open source**. This means that you can edit, and modify the **Python** code to do what you want with it. **We are totally fine with this** - but please note we will not help you in our help server on Discord, if your problem appears to be directly caused by your changes.
 
 As a small guide, we've written some information below about modifying the bot. The bot uses the libraries `youtube-dl` and `discord.py` to download and stream media, as well as interact with Discord.
 
 General notes:
 
-* **IMPORTANT - You should read [discord.py's documentation](http://discordpy.readthedocs.io/en/latest/api.html)**
 * **The class `MusicBot` is a subclass of [discord.Client](http://discordpy.readthedocs.io/en/latest/api.html#client) so you should use `self` when using [discord.Client](http://discordpy.readthedocs.io/en/latest/api.html#client) functions inside the class in `bot.py`**
 * **Most functions are a [coroutine](http://discordpy.readthedocs.io/en/latest/faq.html#what-is-a-coroutine), so you should insert the `await` keyword before using it**
-
-***
 
 The following utility functions can be used in the `MusicBot` class (`bot.py`), which handle and deal with exceptions properly.
 
 * [safe_send_message](https://github.com/SexualRhinoceros/MusicBot/blob/master/musicbot/bot.py#L470) (in substitute of discord.py's `send_message`)
 * [safe_edit_message](https://github.com/SexualRhinoceros/MusicBot/blob/master/musicbot/bot.py#L503) (in substitute of discord.py's `edit_message`)
 * [safe_print](https://github.com/SexualRhinoceros/MusicBot/blob/master/musicbot/bot.py#L515) (in substitute of `print` - handles Unicode issues)
+
+***
 
 ## Adding a command
 Our command framework is easy enough to work with. To create a new command, define a new **asynchronous function** that starts with the `cmd_` prefix. It accepts the following arguments (which will be passed by the event `on_message`):
@@ -67,8 +72,9 @@ Notes about commands:
 
 ***
 
-If you have issues with and need help with the **discord.py library** that is used by MusicBot, you can join the Discord API server by clicking the banner below:
+If you have issues with and need help with the **discord.py library** that is used by MusicBot, do the following:
 
-[![Discord](https://discordapp.com/api/guilds/81384788765712384/widget.png)](https://discord.gg/KZBHSxz)
+1. **Read [discord.py's documentation](http://discordpy.readthedocs.io/en/latest/api.html)** - chances are what you need is in there
+2. **Ask for help in the Discord API server** - read the docs first - [![Discord](https://discordapp.com/api/guilds/81384788765712384/widget.png)](https://discord.gg/KZBHSxz)
 
-**Reminder: We will not provide help on OUR help server for issues with modifying the bot**
+**Reminder: We will not provide help on OUR OWN help server for issues with modifying the bot**
