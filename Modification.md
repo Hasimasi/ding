@@ -8,6 +8,7 @@ As a small guide, we've written some information below about modifying the bot. 
 
 General notes:
 
+* **IMPORTANT - You should read [discord.py's documentation](http://discordpy.readthedocs.io/en/latest/api.html)**
 * **The class `MusicBot` is a subclass of [discord.Client](http://discordpy.readthedocs.io/en/latest/api.html#client) so you should use `self` when using [discord.Client](http://discordpy.readthedocs.io/en/latest/api.html#client) functions inside the class in `bot.py`**
 * **Most functions are a [coroutine](http://discordpy.readthedocs.io/en/latest/faq.html#what-is-a-coroutine), so you should insert the `await` keyword before using it**
 
