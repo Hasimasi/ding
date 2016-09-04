@@ -43,6 +43,7 @@ Notes about commands:
 
 * **Any argument given to the function that is NOT in the list above will be counted as a REQUIRED positional argument when someone uses the command**
 * **Docstrings are used when using `!help command` or when a user doesn't use the command correctly (e.g missing arguments)**
+* **In docstrings, `{command_prefix}` is replaced by the command prefix the user has set in the config file**
 
 ### Example: Ping command
 
