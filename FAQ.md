@@ -44,18 +44,12 @@ The bot uses **youtube-dl**. View [list of supported sites](https://rg3.github.i
 **No**, but it will very soon.
 
 ### Can the bot play music that's already on my computer?
-**No**, but this is in the works.
+**No**, but it will very soon.
 
 ### Can I modify the bot?
 **Yes**, but please note that we will **not** help you during this process or if something breaks because of it. You can find help with the **discord.py library** that is used by MusicBot on the Discord API server by clicking the banner below:
 
 [![Discord](https://discordapp.com/api/guilds/81384788765712384/widget.png)](https://discord.gg/KZBHSxz)
 
-### What does `SSL: CERTIFICATE_VERIFY_FAILED` mean?
-You are **missing** an SSL certificate from a major authority. Download [this file](https://support.comodo.com/index.php?/Knowledgebase/Article/GetAttachment/969/821026) and install it on your system. Then shutdown the bot and start it again. **If you still have problems**, see [here](https://github.com/SexualRhinoceros/MusicBot/wiki#need-help).
-
-### What does `[s16le @ 0x1926e60] Using AVStream.codec to pass codec parameters to muxers is deprecated, use AVStream.codecpar instead.` mean?
-You can **ignore** this message. It doesn't affect your bot.
-
-### What does `No module named 'musicbot'` mean?
-Open your **main** `MusicBot` folder and find the folder inside named `musicbot`. **Make sure the name is all lowercase**.
+### What license does the bot use?
+The bot is licensed under the **MIT License**.
