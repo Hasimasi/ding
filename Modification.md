@@ -48,7 +48,7 @@ Notes about commands:
 ### Example: Ping command
 
 ```py
-    async def cmd_ping(channel):
+    async def cmd_ping(self, channel):
         """
         Usage:
             {command_prefix}ping
@@ -60,7 +60,7 @@ Notes about commands:
 ### Example: Send a message to all servers
 
 ```py
-    async def cmd_sendall(args, leftover_args):
+    async def cmd_sendall(self, args, leftover_args):
         """
         Usage:
             {command_prefix}sendall <message>
