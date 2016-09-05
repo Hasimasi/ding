@@ -7,7 +7,7 @@
 
 # Introduction
 
-Installing the bot on OSX requires the downloading of several libraries. [Homebrew](http://brew.sh/), [Python](http://www.python.org), a text editor, and other software/dependecies are required to run the MusicBot. This guide will show tell you each of those things you need to install to download the bot and its dependencies.
+Installing the bot on OSX requires the downloading of several libraries. [Homebrew](http://brew.sh/), [Python](http://www.python.org), a [text editor](https://atom.io/), and other software/dependecies are required to run the MusicBot. This guide will show tell you each of those things you need to install to download the bot and its dependencies.
 
 ## 1: Dependencies
 
