@@ -9,6 +9,8 @@
 ## 1: Dependencies
 The bot requires **other software** installed on your Debian machine. You should **run the following commands** in Debian's console in order.
 
+Before running the commands, ensure that you have **added backports** to your `sources.list` file. [Click here for more information on how to do this](https://backports.debian.org/Instructions/#index2h2).
+
     sudo apt-get install git libopus-dev libffi-dev libsodium-dev -y
     sudo apt-get -t jessie-backports install ffmpeg x264 -y
     sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl -y
