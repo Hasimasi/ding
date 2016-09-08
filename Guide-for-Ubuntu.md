@@ -11,29 +11,25 @@ If you are new to using Ubuntu, there is a guide on [Digital Ocean's community t
 ## 2: Dependencies
 The bot requires **other software** installed on your Ubuntu machine. You should **run the following commands** in Ubuntu's console in order.
 
-NOTE: If you are running Ubuntu 14.04 Or earlier, run these commands:
-
     sudo apt-get install build-essential unzip -y
     sudo apt-get install software-properties-common -y
     sudo add-apt-repository ppa:fkrull/deadsnakes -y
     sudo add-apt-repository ppa:mc3man/trusty-media -y
     sudo add-apt-repository ppa:chris-lea/libsodium -y
-    sudo apt-get update -y
-    sudo apt-get upgrade -y
-    sudo apt-get install git python3.5 python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
 
-Run these commands if you are on Ubuntu 14.10 Or Above:
+If you're using **Ubuntu 14.04 or below**, use this command:
 
-    sudo apt-get install build-essential unzip -y
-    sudo apt-get install software-properties-common -y
-    sudo add-apt-repository ppa:fkrull/deadsnakes -y
+    sudo add-apt-repository ppa:mc3man/trusty-media -y
+
+If you're using **Ubuntu 14.10 or above**, use this command:
+
     sudo add-apt-repository ppa:mc3man/xerus-media -y
-    sudo add-apt-repository ppa:chris-lea/libsodium -y
+
+Finally:
+
     sudo apt-get update -y
     sudo apt-get upgrade -y
     sudo apt-get install git python3.5 python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
-
-If you are on Ubuntu 14.10 or above, you will most likely still get warnings that some index files have failed to download. Thats because chris-lea's PPA still don't support xenial yet. Ignore message.
 
 After installing Python, it **should** come with `pip`. You can test this by using the command `pip3.5` and checking it doesn't respond with **Command not found**. If it does, run these commands to install pip:
 
