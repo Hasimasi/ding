@@ -7,18 +7,18 @@
 
 # Introduction
 
-Installing the bot on OSX requires the downloading of several libraries. [Homebrew](http://brew.sh/), [Python](http://www.python.org), a [text editor](https://atom.io/), and other software/dependecies are required to run the MusicBot. This guide will show tell you each of those things you need to install to download the bot and its dependencies.
+Installing the bot on OSX requires the download of several libraries. [Homebrew](http://brew.sh/), [Python](http://www.python.org), a [text editor](https://atom.io/), and other software/dependecies are required to run MusicBot. This guide will show you how to install everything you need and get the MuiscBot set up.
 
 ## 1: Dependencies
 
 ### 1.a: Python
 
-[ClickHere](https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg) to start downloading Python3.5.2. After downloading, open the `python-3.5.2-macosx10.6.pkg` and complete installation to your computers harddrive.
+[Click Here](https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg) to start downloading **Python 3.5.2.** After downloading, open `python-3.5.2-macosx10.6.pkg` and complete installation to your computer's hard drive.
 
 ### 1.b: Other dependencies
 
-The bot requires **other software** installed on your OS X machine. You should run the following commands in Terminal's console in order.
-**Note:** When running the `xcode-select --install` a dialog bog will open asking if you want to install `xcode-select`; select install and finish the installation then continue on with the other commands with in Terminal.app.
+The bot requires **other software** installed on your OS X machine. You should run the following commands in Terminal in order.
+**Note:** When running `xcode-select --install`, a dialog bog will open asking if you want to install `xcode-select`; select install and finish the installation. Then continue on with the other commands in Terminal.
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew update
@@ -31,29 +31,29 @@ The bot requires **other software** installed on your OS X machine. You should r
 
 ## 2: Clone
 
-To get the latest version of MusicBot, run the following commands in Terminal:
+To get the latest version of the MusicBot, run the following commands in Terminal:
 
     cd desktop
     git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master 
     cd    
 
-cd'ing to the desktop allows you to quickly find your MusicBot folder as it places the folder directly on your desktop.
+`cd`ing to the Desktop allows you to quickly find your MusicBot folder as it places the folder directly on your Desktop.
 
 ## 3: Configure
 
 > **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
-Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
+Inside the MusicBot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as *options.ini* after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
 
 ## 4: Terminal Permissions
 
-In order for Terminal.app to run the .command files needed for the bot you will need to do the following:
+In order for Terminal to run the `.command` files needed for the bot, you will need to do the following:
 
-In Terminal.app type the command below followed by a space:
+In Terminal, type the command below followed by a space:
 
     chmod +x 
 
-Click and drag the file `update_macdeps.command` into terminal then press `RETURN`.
+Click and drag the `update_macdeps.command` file into Terminal then press `RETURN`.
 Repeat the above for the `runbot_mac.command` file. You should then be able to double-click the command files to run the bot.
 
 Example:
@@ -65,4 +65,4 @@ Example:
 ## 5: Run
 In the main folder (called `MusicBot`), **double-click** `update_macdeps.command` to install the required Python dependencies. After it is finished, you can **close the window** and then **double-click** `runbot_mac.command` to run the bot.
 
-If you **close** the Terminal, your bot will stop working. This window is required to be open for the bot to run. The bot will also stop if you turn your computer off, sleep, or hibernate it. To avoid these issues, you can buy a dedicated server.
+If you **close** Terminal, your bot will stop working. This window is required to be open for the bot to run. The bot will also stop if you turn your computer off, sleep, or hibernate it. To avoid these issues, you can buy a dedicated server.
