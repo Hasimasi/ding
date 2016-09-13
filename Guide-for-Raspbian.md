@@ -56,7 +56,7 @@ FFmpeg is needed to stream music to Discord. **Run these commands**:
     sudo git clone git://git.videolan.org/x264
     cd x264
     sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
-    make
+    sudo make
     sudo make install
 
 You installed **H264 support** for your Raspberry Pi. Now lets install FFmpeg.
