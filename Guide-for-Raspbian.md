@@ -68,7 +68,7 @@ You installed **H264 support** for your Raspberry Pi. Now lets install FFmpeg.
 
 If you own a **quad-core** Raspberry Pi (3 B or higher), you can add `-j4` to the end of the next command (making it `make -j4`) to speed up the build process considerably. **Building FFmpeg may take a while**.
 
-    make -j4
+    sudo make -j4
     sudo make install
 
 ## 2: Clone
