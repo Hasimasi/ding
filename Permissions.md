@@ -4,7 +4,7 @@
 
 This page gives information on how to setup **permissions**. When you install the bot, you will get a file inside the `config` folder named `example_permissions.ini`. This option contains an **example set** of permissions. Edit it, and then **save it as a new file** called `permissions.ini`.
 
-**For Windows users**, please note that file extensions are **hidden by default**, so you may just need to save the file as `permissions` if you are having difficulty - the `.ini` may be hidden.
+**For Windows users**, please note that file extensions are **hidden by default**, so you may just need to save the file as `permissions` if you are having difficulties - the `.ini` may be hidden.
 
 **Do not edit any configuration file using Notepad or other basic text editors, otherwise it will break. Use something like [Notepad++](https://notepad-plus-plus.org/download/)**.
 
@@ -30,3 +30,5 @@ The permissions file contains **multiple sections**. The `[Default]` section sho
 **Add a role's ID** in the `GrantToRoles` section of the group. Each role ID should be separated by **spaces**. For example:
 
     GrantToRoles = 173129876679688192 183343083063214081
+
+However, **don't add an ID to the Default group!** This group is assigned to everyone that doesn't have any other groups assigned and therefore needs no ID.
