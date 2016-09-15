@@ -51,3 +51,37 @@ The bot uses **youtube-dl**. View [list of supported sites](https://rg3.github.i
 
 ### What license does the bot use?
 The bot is licensed under the **MIT License**.
+
+###OS X - `Warning:ffmpeg-3.x.x already installed, it's just not linked`?
+
+To resolve this issue of FFMPEG not linking itself run the following command:
+
+    brew link ffmpeg
+
+If you still get the error that it isn't linked try the following. First remove ffmpeg from your system:
+
+    brew uninstall ffmpeg
+
+Now update all your brew packages and references.
+
+    brew update
+    brew upgrade --all
+    brew cleanup
+
+Now install ffmpeg on your system, and link it up:
+
+    brew install ffmpeg --force
+    brew link ffmpeg
+
+Now you should be good to go.
+
+###OS X - Brew link isn't working!?
+
+    Error: The `brew link` step did not complete successfully
+    The formula built, but is not symlinked into /usr/local
+    Could not symlink bin/a2x
+    /usr/local/bin is not writable.
+
+If you get the above error when trying to link FFMPEG run the following command then try linking again:
+
+    sudo chown -R `whoami`:admin /usr/local/bin
