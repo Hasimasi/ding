@@ -49,6 +49,9 @@ The bot uses **youtube-dl**. View [list of supported sites](https://rg3.github.i
 ### Can I modify the bot?
 **Yes**, [read here](https://github.com/SexualRhinoceros/MusicBot/wiki/Modification/).
 
+### Can I play a YouTube "Mix"?
+**No**. Only user playlists are supported by the bot, YouTube's generated playlists do not count as this.
+
 ### What license does the bot use?
 The bot is licensed under the **MIT License**.
 
