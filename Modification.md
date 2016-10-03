@@ -45,34 +45,13 @@ Notes about commands:
 * **Docstrings are used when using `!help command` or when a user doesn't use the command correctly (e.g missing arguments)**
 * **In docstrings, `{command_prefix}` is replaced by the command prefix the user has set in the config file**
 
-### Example: Ping command
+### Examples
 
-```py
-    async def cmd_ping(self, channel):
-        """
-        Usage:
-            {command_prefix}ping
-        Ping command to test latency
-        """
-        await self.safe_send_message(channel, "Pong!")
-```
+* [Ping command](https://gist.github.com/jaydenkieran/8cf64f91fec73ba0bd127a08f6578988)
+* [Send a message to all servers](https://gist.github.com/jaydenkieran/c18ddef3817c58ad1cbb6018d33790eb)
+* [Make restart command broadcast to all servers](https://gist.github.com/jaydenkieran/01a91e5270bbf0daf3884c60eb161329)
 
-### Example: Send a message to all servers
-
-```py
-    async def cmd_sendall(self, args, leftover_args):
-        """
-        Usage:
-            {command_prefix}sendall <message>
-        Sends a message to all servers the bot is on
-        """
-        if leftover_args:
-            args = ' '.join([args, *leftover_args])
-        for s in self.servers:
-            await self.safe_send_message(s, args)
-```
-
-***
+## Support
 
 If you have issues with and need help with the **discord.py library** that is used by MusicBot, do the following:
 
