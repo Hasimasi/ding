@@ -37,9 +37,11 @@ Git is needed to download the bot from GitHub. We will **only help you in future
 At the end of the installation, you will **be able to use Git Bash** by **right-clicking a folder** and selecting `Git Bash` (or `Git Bash Here`) from the menu.
 
 ## 2: Clone
-Open **Git Bash** (as explained at the end of the last section) and enter the following command to **clone** (download) the MusicBot. This will place it in a new folder in the folder you're in, called `MusicBot`.
+Open **Git Bash** (as explained at the end of the last section) and enter the following command to **clone** (download) the MusicBot.
 
     git clone https://github.com/SexualRhinoceros/MusicBot.git ~/MusicBot -b master
+
+After using this command, a folder called `MusicBot` will be added inside your Windows user's directory (usually `C:/Users/<name>`).
 
 ## 3: Configure
 > **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
