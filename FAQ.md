@@ -37,6 +37,12 @@ Replace `<CLIENT ID>` in the link above with the Client ID from your application
 ### What sites can the bot play music from?
 The bot uses **youtube-dl**. View [list of supported sites](https://rg3.github.io/youtube-dl/supportedsites.html).
 
+### How do I play a YouTube playlist?
+To play a YouTube playlist with the bot, ensure you use the correct URL for the playlist. Example:
+
+- :no_entry_sign: `https://www.youtube.com/watch?v=DksSPZTZES0&list=PLpuDUpB0osJmZQ0a3n6imXirSu0QAZIqF&index=1`
+- :white_check_mark: `https://www.youtube.com/playlist?list=PLpuDUpB0osJmZQ0a3n6imXirSu0QAZIqF`
+
 ### Does the bot support Spotify, Deezer, etc?
 **No**. This is mostly because it violates the Terms of Service agreements of those services.
 
