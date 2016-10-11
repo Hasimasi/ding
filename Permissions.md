@@ -18,14 +18,14 @@ The permissions file contains **multiple sections**. The `[Default]` section sho
     CommandWhitelist = play skip
 
 ### Add a user to a group
-> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+> **Read [this section](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
 
 **Add a user's ID** in the `UserList` section of the group. Each user ID should be separated by **spaces**. For example:
 
     UserList = 154748625350688768 104766296687656960
 
 ### Add a role to a group
-> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+> **Read [this section](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
 
 **Add a role's ID** in the `GrantToRoles` section of the group. Each role ID should be separated by **spaces**. For example:
 
