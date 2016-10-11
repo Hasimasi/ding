@@ -75,16 +75,16 @@ If you own a **quad-core** Raspberry Pi (3 B or higher), you can add `-j4` to th
 Now that the system dependencies out of the way, **run the following commands** to install the bot in your home directory and install the Python dependencies required:
 
     cd ~
-    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
+    git clone https://github.com/Just-Some-Bots/MusicBot.git MusicBot -b master
     cd MusicBot
     sudo -H pip3.5 install --upgrade -r requirements.txt
 
 ## 3: Configure
-> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+> **At this point you should [create a bot account](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
 **Connect to your Raspberry Pi using FTP**.
 
-Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing and upload it back to the Raspberry Pi**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
+Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing and upload it back to the Raspberry Pi**. If you need help, read the [configuration page](https://github.com/Just-Some-Bots/MusicBot/wiki/Configuration).
 
 ## 4: Start
 You can start your bot by running this command:
