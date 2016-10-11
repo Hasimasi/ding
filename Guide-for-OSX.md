@@ -34,14 +34,14 @@ The bot requires **other software** installed on your OS X machine. You should r
 To get the latest version of the MusicBot, run the following commands in Terminal:
 
     cd desktop
-    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master 
+    git clone https://github.com/Just-Some-Bots/MusicBot.git MusicBot -b master 
     cd    
 
 `cd`ing to the Desktop allows you to quickly find your MusicBot folder as it places the folder directly on your Desktop.
 
 ## 3: Configure
 
-> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+> **At this point you should [create a bot account](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
 Inside the MusicBot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as *options.ini* after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
 
