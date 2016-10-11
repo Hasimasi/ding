@@ -39,16 +39,16 @@ At the end of the installation, you will **be able to use Git Bash** by **right-
 ## 2: Clone
 Open **Git Bash** (as explained at the end of the last section) and enter the following command to **clone** (download) the MusicBot.
 
-    git clone https://github.com/SexualRhinoceros/MusicBot.git ~/MusicBot -b master
+    git clone https://github.com/Just-Some-Bots/MusicBot.git ~/MusicBot -b master
 
 After using this command, a folder called `MusicBot` will be added inside your Windows user's directory (usually `C:/Users/<name>`).
 
 ## 3: Configure
-> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+> **At this point you should [create a bot account](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
 **Open** the folder that was created, called `MusicBot`. The folder contains all of the bots files. **Do not delete or rename any files/folders**.
 
-Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
+Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/Just-Some-Bots/MusicBot/wiki/Configuration).
 
 ## 4: Run
 In the main folder (called `MusicBot`), **double-click** `update_deps.bat` to install the required Python dependencies. After it is finished, you can **close the window** and then **double-click** `runbot.bat` to run the bot.
