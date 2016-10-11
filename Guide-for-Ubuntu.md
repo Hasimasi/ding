@@ -40,16 +40,16 @@ After installing Python, it **should** come with `pip`. You can test this by usi
 
 Run the following commands to download MusicBot. This will place it in a **new folder** called `MusicBot`, which we will immediately enter.
 
-    git clone https://github.com/SexualRhinoceros/MusicBot.git MusicBot -b master
+    git clone https://github.com/Just-Some-Bots/MusicBot.git MusicBot -b master
     cd MusicBot
 
 ## 4: Configure
 
-> **At this point you should [create a bot account](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
+> **At this point you should [create a bot account](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-create-a-bot-account) and [add it to your server](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-add-my-bot-account-to-a-server)**.
 
 The folder we're in contains all of the bots files. **Do not delete or rename any files/folders**. We now need to configure the bot. **The following paragraph should be done using an FTP client connected to your Ubuntu machine**. **If you want to edit the config file from Ubuntu**, see [this AskUbuntu answer](http://askubuntu.com/a/54222).
 
-Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing and upload it back to the Ubuntu machine**. If you need help, read the [configuration page](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration).
+Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing and upload it back to the Ubuntu machine**. If you need help, read the [configuration page](https://github.com/Just-Some-Bots/MusicBot/wiki/Configuration).
 
 ## 5: Start
 You can test that your bot works by running this command:
