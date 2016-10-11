@@ -29,13 +29,13 @@ If you are using a **bot account**, which you **should be using**, you **do not*
 ## Permissions
 
 ### OwnerID
-> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+> **Read [this section](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
 
 This is the ID of your **Discord user**. Example:
 
     OwnerID = 154748625350688768
 
-This is **not** the bot account itself. The owner should be **you**. This is the person that will have all permissions and ultimate control over the bot. **There cannot be multiple owners - use [permissions](https://github.com/SexualRhinoceros/MusicBot/wiki/Permissions/) for that**.
+This is **not** the bot account itself. The owner should be **you**. This is the person that will have all permissions and ultimate control over the bot. **There cannot be multiple owners - use [permissions](https://github.com/Just-Some-Bots/MusicBot/wiki/Permissions/) for that**.
 
 ## Chat
 
@@ -49,7 +49,7 @@ This is the **prefix** that will be used in commands. For example, if my prefix 
 
 > **Note:** To use this option, **uncomment it** (remove the semi-colon at the start of the line)
 
-> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+> **Read [this section](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
 
 If you want your bot to **only work and reply in certain text channels**, this is the option you use. You should enter the IDs of each channel that you want the bot to listen to. Example:
 
@@ -59,7 +59,7 @@ If you want your bot to **only work and reply in certain text channels**, this i
 
 > **Note:** To use this option, **uncomment it** (remove the semi-colon at the start of the line)
 
-> **Read [this section](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
+> **Read [this section](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#how-do-i-get-an-id) of the FAQ to learn how to obtain an ID**
 
 If you want your bot to **automatically join voice channels**, this is the option you use. You should enter the IDs of each voice channel that you want you bot to join when it is started. If you are using a **bot account**, you can enter multiple IDs for multiple servers (**one voice channel per server**). Example:
 
@@ -73,7 +73,7 @@ This is the **default volume** that your bot will play music at when it is start
 
 ### WhiteListCheck
 
-This decides whether or not the bot can **only** be used by **whitelisted users**. This feature is deprecated, and we won't provide much help for it. Use [permissions](https://github.com/SexualRhinoceros/MusicBot/wiki/Permissions/) instead. **To set up which users are whitelisted**, put their IDs in the `whitelist.txt` file in the `config` folder (one per line).
+This decides whether or not the bot can **only** be used by **whitelisted users**. This feature is deprecated, and we won't provide much help for it. Use [permissions](https://github.com/Just-Some-Bots/MusicBot/wiki/Permissions/) instead. **To set up which users are whitelisted**, put their IDs in the `whitelist.txt` file in the `config` folder (one per line).
 
 ### SkipsRequired & SkipRatio
 
