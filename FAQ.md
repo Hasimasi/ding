@@ -8,7 +8,7 @@
 3. Give your bot a **name** and an **icon**, then press **Create Application** (leave other fields blank)
 4. On the next page, click **Create a Bot User**
 5. Next to **Token**, click **Click to reveal** to see your token
-6. Enter your token inside the **configuration file** for the bot. Need help? [See here](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration#credentials)
+6. Enter your token inside the **configuration file** for the bot. Need help? [See here](https://github.com/Just-Some-Bots/MusicBot/wiki/Configuration#credentials)
 
 <p align="center">
 <img src="http://i.imgur.com/cN4YehO.png">
@@ -53,7 +53,7 @@ To play a YouTube playlist with the bot, ensure you use the correct URL for the 
 **No**, but it will very soon.
 
 ### Can I modify the bot?
-**Yes**, [read here](https://github.com/SexualRhinoceros/MusicBot/wiki/Modification/).
+**Yes**, [read here](https://github.com/Just-Some-Bots/MusicBot/wiki/Modification/).
 
 ### Can I play a YouTube "Mix"?
 **No**. Only user playlists are supported by the bot, YouTube's generated playlists do not count as this.
