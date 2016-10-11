@@ -2,7 +2,7 @@
 <img src="http://i.imgur.com/XM9wM2Z.png">
 </p>
 
-This is a list of the **commands** that can be used to control the MusicBot. You **cannot** use commands in private messages. Every command starts with the prefix that you [configured](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration/). This page assumes your prefix is `!`, the default.
+This is a list of the **commands** that can be used to control the MusicBot. You **cannot** use commands in private messages. Every command starts with the prefix that you [configured](https://github.com/Just-Some-Bots/MusicBot/wiki/Configuration/). This page assumes your prefix is `!`, the default.
 
 ***
 
@@ -32,7 +32,7 @@ Prints a basic list of commands, or info on a command if `[command]` is specifie
 Add a song to the queue, or add the first youtube result for the provided search text.
 
 ##### Arguments:
-- `<song link>` A link to some song.  **Links are not limited to youtube**, see [this FAQ entry](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ#is-some-other-website-or-service-supported).
+- `<song link>` A link to some song.  **Links are not limited to youtube**, see [this FAQ entry](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#is-some-other-website-or-service-supported).
   - Example: `!play https://www.youtube.com/watch?v=gbv-yqqmLH0`
 - *or...*
 - `<song text to search for>` Some search query you want the bot to look up on youtube.
