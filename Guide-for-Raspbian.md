@@ -24,6 +24,8 @@ The bot requires **other software** installed on your Raspberry Pi. Run these co
     sudo add-apt-repository ppa:chris-lea/libsodium -y
     sudo apt-get install libopus-dev libffi-dev libsodium-dev
 
+**If you get errors while adding the PPAs as repositories, try continuing without them. [They may not be needed](https://github.com/Just-Some-Bots/MusicBot/issues/609).**
+
 ### 1.b: Python
 Raspbian doesn't come with the correct version of Python out of the box. **We will install the correct version ourselves**. **This process can take a while**, as we're building Python from scratch.
 
