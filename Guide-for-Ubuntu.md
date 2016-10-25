@@ -52,6 +52,10 @@ The folder we're in contains all of the bots files. **Do not delete or rename an
 Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing and upload it back to the Ubuntu machine**. If you need help, read the [configuration page](https://github.com/Just-Some-Bots/MusicBot/wiki/Configuration).
 
 ## 5: Start
+Before starting your bot, update the Python dependencies using `pip`. To do that, use this command (you may have to run it using `sudo`):
+
+    python3.5 -m pip install -U -r requirements.txt
+
 You can test that your bot works by running this command:
 
     python3.5 run.py
