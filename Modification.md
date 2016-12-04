@@ -26,7 +26,7 @@ The following utility functions can be used in the `MusicBot` class (`bot.py`), 
 ***
 
 ## Adding a command
-Our command framework is easy enough to work with. To create a new command, define a new **asynchronous function** that starts with the `cmd_` prefix. It accepts the following arguments (which will be passed by the event `on_message`):
+Our command framework is easy enough to work with. Commands are added inside `bot.py`. To create a new command, define a new **asynchronous function** that starts with the `cmd_` prefix. It accepts the following arguments (which will be passed by the event `on_message`):
 
 * `message` - The [Message](http://discordpy.readthedocs.io/en/latest/api.html#message) that triggered the command
 * `channel` - The [Channel](http://discordpy.readthedocs.io/en/latest/api.html#channel) that the command was triggered in
