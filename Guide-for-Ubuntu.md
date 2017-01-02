@@ -15,11 +15,11 @@ The bot requires **other software** installed on your Ubuntu machine. You should
     sudo apt-get install software-properties-common -y
     sudo add-apt-repository ppa:fkrull/deadsnakes -y
     sudo add-apt-repository ppa:mc3man/trusty-media -y
-    sudo add-apt-repository ppa:chris-lea/libsodium -y
 
-If you're using **Ubuntu 14.04 or below**, use this command:
+If you're using **Ubuntu 14.04 or below**, use these commands:
 
     sudo add-apt-repository ppa:mc3man/trusty-media -y
+    sudo add-apt-repository ppa:chris-lea/libsodium -y
 
 If you're using **Ubuntu 14.10 or above**, use this command:
 
@@ -30,6 +30,8 @@ Finally:
     sudo apt-get update -y
     sudo apt-get upgrade -y
     sudo apt-get install git python3.5 python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
+    sudo apt-get update -y
+
 
 After installing Python, it **should** come with `pip`. You can test this by using the command `pip3.5` and checking it doesn't respond with **Command not found**. If it does, run these commands to install pip:
 
