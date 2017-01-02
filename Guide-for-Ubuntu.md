@@ -11,30 +11,30 @@ If you are new to using Ubuntu, there is a guide on [Digital Ocean's community t
 The bot requires **other software** installed on your Ubuntu machine. Run these commands in your terminal window.
 
 ```sh
-    sudo apt-get install build-essential unzip -y
-    sudo apt-get install software-properties-common -y
+sudo apt-get install build-essential unzip -y
+sudo apt-get install software-properties-common -y
 ```
 
 > Run the following commands on **Ubuntu 14.04** only
 
 ```sh
-    sudo add-apt-repository ppa:fkrull/deadsnakes -y
-    sudo add-apt-repository ppa:mc3man/trusty-media -y
-    sudo add-apt-repository ppa:chris-lea/libsodium -y
+sudo add-apt-repository ppa:fkrull/deadsnakes -y
+sudo add-apt-repository ppa:mc3man/trusty-media -y
+sudo add-apt-repository ppa:chris-lea/libsodium -y
 
-    sudo apt-get update -y
-    sudo apt-get install git ffmpeg libopus-dev libffi-dev libsodium-dev -y
-    sudo apt-get upgrade -y
+sudo apt-get update -y
+sudo apt-get install git ffmpeg libopus-dev libffi-dev libsodium-dev -y
+sudo apt-get upgrade -y
 ```
 
 > Run the following commands on **Ubuntu 16.04 or higher** only
 
 ```sh
-    sudo add-apt-repository ppa:mc3man/xerus-media -y
+sudo add-apt-repository ppa:mc3man/xerus-media -y
 
-    sudo apt-get update -y
-    sudo apt-get install git python python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
-    sudo apt-get upgrade -y
+sudo apt-get update -y
+sudo apt-get install git python python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
+sudo apt-get upgrade -y
 ```
 
 ## 3: Clone
@@ -56,21 +56,21 @@ Inside the bot's folder is another folder called `config`. Open it, and then ope
 Before starting your bot, update the Python dependencies using `pip`. To do that, use this command (you may have to run it using `sudo`):
 
 ```sh
-    # Ubuntu 14.04(.*) LTS
-    python3.5 -m pip install -U -r requirements.txt
+# Ubuntu 14.04(.*) LTS
+python3.5 -m pip install -U -r requirements.txt
 
-    # Ubuntu 16.04 LTS or higher
-    python3 -m pip install -U -r requirements.txt
+# Ubuntu 16.04 LTS or higher
+python3 -m pip install -U -r requirements.txt
 ```
 
 You can test that your bot works by running this command:
 
 ```sh
-    # Ubuntu 14.04(.*) LTS
-    python3.5 run.py
+# Ubuntu 14.04(.*) LTS
+python3.5 run.py
 
-    # Ubuntu 16.04 LTS or higher
-    python3 run.py
+# Ubuntu 16.04 LTS or higher
+python3 run.py
 ```
 
 If you **close your SSH session/console**, the bot will stop running.
@@ -84,13 +84,13 @@ There are a **number of options** that can allow you to run the bot **permanentl
 Run this command to make a `tmux` console and then run the bot:
 
 ```sh
-    tmux new -s bot
+tmux new -s bot
 
-    # Ubuntu 14.04(.*) LTS
-    python3.5 run.py
+# Ubuntu 14.04(.*) LTS
+python3.5 run.py
 
-    # Ubuntu 16.04 LTS or higher
-    python3 run.py
+# Ubuntu 16.04 LTS or higher
+python3 run.py
 ```
 
 Now that the bot is running, press `CTRL+B` then `d` separately to 'detach' from the tmux session. If you ever want to have a look at the bot's console logs, SSH back into the machine and run `tmux a`.
@@ -99,13 +99,13 @@ Now that the bot is running, press `CTRL+B` then `d` separately to 'detach' from
 Run this command to make a `screen` console and run the bot:
 
 ```sh
-    screen -S bot
+screen -S bot
 
-    # Ubuntu 14.04(.*) LTS
-    python3.5 run.py
+# Ubuntu 14.04(.*) LTS
+python3.5 run.py
 
-    # Ubuntu 16.04 LTS or higher
-    python3 run.py
+# Ubuntu 16.04 LTS or higher
+python3 run.py
 ```
 
 Now that the bot is running, press `Ctrl+A` then `d` separately to 'detach' from the screen. If you ever want to have a look at the bot's console logs, SSH back into the machine and run `screen -r bot`.
