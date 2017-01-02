@@ -16,14 +16,17 @@ The bot requires **other software** installed on your Ubuntu machine. You should
     sudo add-apt-repository ppa:fkrull/deadsnakes -y
     sudo add-apt-repository ppa:mc3man/trusty-media -y
 
-If you're using **Ubuntu 14.04 or below**, use these commands:
+If you're using **Ubuntu 14.04 or below**, use this command:
 
     sudo add-apt-repository ppa:mc3man/trusty-media -y
-    sudo add-apt-repository ppa:chris-lea/libsodium -y
 
 If you're using **Ubuntu 14.10 or above**, use this command:
 
     sudo add-apt-repository ppa:mc3man/xerus-media -y
+
+If you're running **Ubuntu 16.04 or above** __**DO NOT**__ run the following command. All lower versions of use this command:
+
+    sudo add-apt-repository ppa:chris-lea/libsodium -y
 
 Finally:
 
