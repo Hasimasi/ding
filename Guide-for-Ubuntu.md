@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:mc3man/trusty-media -y
 sudo add-apt-repository ppa:chris-lea/libsodium -y
 
 sudo apt-get update -y
-sudo apt-get install git ffmpeg libopus-dev libffi-dev libsodium-dev -y
+sudo apt-get install git python python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
 sudo apt-get upgrade -y
 ```
 
@@ -33,7 +33,7 @@ sudo apt-get upgrade -y
 sudo add-apt-repository ppa:mc3man/xerus-media -y
 
 sudo apt-get update -y
-sudo apt-get install git python python3.5-dev ffmpeg libopus-dev libffi-dev libsodium-dev -y
+sudo apt-get install git ffmpeg libopus-dev libffi-dev libsodium-dev -y
 sudo apt-get upgrade -y
 ```
 
