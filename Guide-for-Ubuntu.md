@@ -55,7 +55,7 @@ Inside the bot's folder is another folder called `config`. Open it, and then ope
 ## 5: Start
 Firstly, ensure pip is up to date. 
 
-```
+```sh
 # Ubuntu 14.04(.*) LTS
 python3.5 -m pip install --upgrade pip
 
