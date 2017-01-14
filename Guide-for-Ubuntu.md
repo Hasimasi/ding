@@ -56,7 +56,11 @@ Inside the bot's folder is another folder called `config`. Open it, and then ope
 Firstly, ensure pip is up to date. 
 
 ```
+# Ubuntu 14.04(.*) LTS
 python3.5 -m pip install --upgrade pip
+
+# Ubuntu 16.04 LTS or higher
+python3 -m pip install --upgrade pip
 ```
 
 Before starting your bot, update the Python dependencies using `pip`. To do that, use this command (you may have to run it using `sudo`):
