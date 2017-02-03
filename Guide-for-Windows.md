@@ -51,6 +51,8 @@ After using this command, a folder called `MusicBot` will be added inside your W
 Inside the bot's folder is another folder called `config`. Open it, and then open the `example_options.ini` file. This is the file containing the **bot's settings**. All options are explained in the file. **Make sure you save the file as options.ini after editing**. If you need help, read the [configuration page](https://github.com/Just-Some-Bots/MusicBot/wiki/Configuration).
 
 ## 4: Run
+> In some cases, your system may be missing an SSL certificate from a major authority, causing your requests while using the bot to fail. To avoid this, [install this certificate](https://support.comodo.com/index.php?/Knowledgebase/Article/GetAttachment/969/821026).
+
 In the main folder (called `MusicBot`), **double-click** `update_deps.bat` to install the required Python dependencies. After it is finished, you can **close the window** and then **double-click** `runbot.bat` to run the bot.
 
 If you **close** the Command Prompt, your bot will stop working. This window is required to be open for the bot to run. The bot will also stop if you turn your computer off, sleep, or hibernate it. To avoid these issues, you can buy a dedicated server.
