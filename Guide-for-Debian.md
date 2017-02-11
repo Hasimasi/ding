@@ -39,10 +39,10 @@ git clone https://github.com/Just-Some-Bots/MusicBot.git MusicBot -b master
 cd MusicBot
 
 # If you are using Debian Jessie with pyenv
-sudo -H python install --upgrade -r requirements.txt
+sudo -H python -m pip install --upgrade -r requirements.txt
 
 # If you are using Debian Stretch
-sudo -H python3.5 install --upgrade -r requirements.txt
+sudo -H python3.5 -m pip install --upgrade -r requirements.txt
 ```
 
 ## 3: Configure
