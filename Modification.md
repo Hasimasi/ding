@@ -1,61 +1,80 @@
-<p align="center">
-<img src="http://i.imgur.com/Xluk1hv.png">
-</p>
+MusicBot is available under the [MIT License](https://choosealicense.com/licenses/mit/). You are free to fork the repository and modify the bot as you see fit. This page serves as a starting point to doing so, and some general guidance.
 
-<p align="center">
-<strong>BEFORE CONTINUING, PLEASE READ <a href="http://discordpy.readthedocs.io/en/latest/api.html">DISCORD.PY'S DOCUMENTATION</a></strong>
-</p>
+## Prerequisites
+* Python 3.5 or higher
+* A development environment. This can be a full-fledged Python IDE, such as [PyCharm](https://www.jetbrains.com/pycharm/). Since the development we will be doing is fairly light, using an advanced text and code editor such as [Atom](https://atom.io/) works too
+* Basic knowledge of Python development. If you don't know the basics of Python, do not try and modify this bot
+* Knowledge of `asyncio` and the asynchronous features introduced in Python 3.5 are **very important**
+* Knowledge of [`discord.py`](https://github.com/Rapptz/discord.py). Documentation is here: http://discordpy.readthedocs.io/en/latest/api.html
 
-***
+## Structure
+* `bot.py` contains the main class, `MusicBot`, along with all commands and Discord integration.
+* `config.py` and `permissions.py` use the standard Python library `configparser` to read from `config.ini` and `permissions.ini` respectively.
+* `downloader.py` is the main wrapper for [`youtube-dl`](https://github.com/rg3/youtube-dl).
+* `player.py` contains the various classes that allow for the bot to play music and maintain queues on each server.
+* `playlist.py` is for managing and processing media for queues.
+* `utils.py` contains various utility functions.
 
-The bot is **open source**. This means that you can edit, and modify the **Python** code to do what you want with it **[within reason](https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ#what-license-does-the-bot-use)**. **We are totally fine with this** - but please note we will not help you in our help server on Discord, if your problem appears to be directly caused by your changes.
+## Command framework
+MusicBot currently uses its own command framework, rather than discord.py's command extension module. In the main MusicBot class, if a function begins with `cmd_`, it becomes detectable to the bot as a command, and will show up in `!help` and elsewhere. Therefore, the following code will be a command:
 
-As a small guide, we've written some information below about modifying the bot. The bot uses the libraries `youtube-dl` and `discord.py` to download and stream media, as well as interact with Discord.
+```py
+async def cmd_test(self):
+    print("Hello, world!")
+```
 
-General notes:
+Adding this within the class and using `!test` will print a message to the console. However, it won't print a message to Discord. That is instead done by returning a [Response](https://github.com/Just-Some-Bots/MusicBot/blob/master/musicbot/bot.py#L60).
 
-* **The class `MusicBot` is a subclass of [discord.Client](http://discordpy.readthedocs.io/en/latest/api.html#client) so you should use `self` when using [discord.Client](http://discordpy.readthedocs.io/en/latest/api.html#client) functions inside the class in `bot.py`**
-* **Most functions are a [coroutine](http://discordpy.readthedocs.io/en/latest/faq.html#what-is-a-coroutine), so you should insert the `await` keyword before using it**
+```py
+async def cmd_test(self):
+    return Response("Hello, world!")
+```
 
-The following utility functions can be used in the `MusicBot` class (`bot.py`), which handle and deal with exceptions properly.
+This code will send a message to the Discord channel that the command was called from, saying `Hello, world!`. Take note of the various parameters that can be provided to the Response class, such as `reply`, which when passed as `True` will mention the user who called the command before the message, and `delete_after`, which is an integer that can be passed indicating how long after the message is sent should it be deleted.
 
-* [safe_send_message](https://github.com/Just-Some-Bots/MusicBot/blob/master/musicbot/bot.py#L470) (in substitute of discord.py's `send_message`)
-* [safe_edit_message](https://github.com/Just-Some-Bots/MusicBot/blob/master/musicbot/bot.py#L503) (in substitute of discord.py's `edit_message`)
-* [safe_print](https://github.com/Just-Some-Bots/MusicBot/blob/master/musicbot/bot.py#L515) (in substitute of `print` - handles Unicode issues)
+There are a number of [parameters](https://github.com/Just-Some-Bots/MusicBot/blob/master/musicbot/bot.py#L1859-L1887) that can be passed to command functions for use within them. For example, passing `channel` will allow you to use the [Channel](http://discordpy.readthedocs.io/en/latest/api.html#channel) object associated with the invoking message (the message that called the command). Example:
 
-***
+```py
+async def cmd_test(self, channel):
+    return Response("Hello, {}".format(channel.name))
+```
 
-## Adding a command
-Our command framework is easy enough to work with. Commands are added inside `bot.py`. To create a new command, define a new **asynchronous function** that starts with the `cmd_` prefix. It accepts the following arguments (which will be passed by the event `on_message`):
+A final thing to note is that the docstring of a command function becomes its "help text". This is shown when doing `!help <command>`, or if the command is used incorrectly (an incorrect number of arguments is passed). Example:
 
-* `message` - The [Message](http://discordpy.readthedocs.io/en/latest/api.html#message) that triggered the command
-* `channel` - The [Channel](http://discordpy.readthedocs.io/en/latest/api.html#channel) that the command was triggered in
-* `author` - The [Member](http://discordpy.readthedocs.io/en/latest/api.html#member) that triggered the command
-* `server` - The [Server](http://discordpy.readthedocs.io/en/latest/api.html#server) that the command was triggered in
-* `player` - The MusicPlayer (see `MusicBot/player.py`) associated with the server (if available)
-* `permissions` - The [Permissions](http://discordpy.readthedocs.io/en/latest/api.html#permissions) that the user has
-* `user_mentions` - A list of all [Members](http://discordpy.readthedocs.io/en/latest/api.html#member) mentioned in the message
-* `channel_mentions` - A list of all [Channels](http://discordpy.readthedocs.io/en/latest/api.html#channel) mentioned in the message
-* `voice_channel` - The voice [Channel](http://discordpy.readthedocs.io/en/latest/api.html#channel) the bot is in on the server (if available)
-* `leftover_args` - A list of the arguments given with the command that **aren't required** arguments
-
-Notes about commands:
-
-* **Any argument given to the function that is NOT in the list above will be counted as a REQUIRED positional argument when someone uses the command**
-* **Docstrings are used when using `!help command` or when a user doesn't use the command correctly (e.g missing arguments)**
-* **In docstrings, `{command_prefix}` is replaced by the command prefix the user has set in the config file**
+```py
+async def cmd_test(self, channel):
+    """
+    Sends a test message to the channel
+    """
+    return Response("Hello, {}".format(channel.name))
+```
 
 ### Examples
+There are a few of example commands that aren't currently in the bot for you to look at it, and implement yourself if you desire.
 
-* [Ping command](https://gist.github.com/jaydenkieran/8cf64f91fec73ba0bd127a08f6578988)
-* [Send a message to all servers](https://gist.github.com/jaydenkieran/c18ddef3817c58ad1cbb6018d33790eb)
-* [Make restart command broadcast to all servers](https://gist.github.com/jaydenkieran/01a91e5270bbf0daf3884c60eb161329)
+* [Simple ping command](https://gist.github.com/jaydenkieran/8cf64f91fec73ba0bd127a08f6578988)
+* [Send a message to all bot's servers](https://gist.github.com/jaydenkieran/c18ddef3817c58ad1cbb6018d33790eb)
+
+There is also an example of editing an existing command:
+
+* [Broadcast restarts to all servers](https://gist.github.com/jaydenkieran/01a91e5270bbf0daf3884c60eb161329)
+
+## Helper functions
+
+MusicBot wraps various functions of discord.py in the MusicBot class in order to handle exceptions, so you should use these instead of their discord.py counterparts:
+
+* `safe_send_message` (instead of `send_message`)
+* `safe_edit_message` (instead of `edit_message`)
+* `safe_delete_message` (instead of `delete_message`)
+
+When printing to console, it is advised to use the MusicBot class function [`safe_print`](https://github.com/Just-Some-Bots/MusicBot/blob/master/musicbot/bot.py#L515) instead of Python's default `print`. This avoids any potential UnicodeDecodeErrors.
+
+## Resources
+
+The bot utilises [`youtube-dl`](https://github.com/rg3/youtube-dl) to download media. Information on the various options that can be provided to the library are available in the README file on youtube-dl's repository. If you want to edit the way that downloading media or extracting information about it works, you should read through the source.
+
+Music is streamed to Discord using [`ffmpeg`](https://ffmpeg.org/). The documentation for ffmpeg is available here: https://ffmpeg.org/ffmpeg.html.
 
 ## Support
 
-If you have issues with and need help with the **discord.py library** that is used by MusicBot, do the following:
-
-1. **Read [discord.py's documentation](http://discordpy.readthedocs.io/en/latest/api.html)** - chances are what you need is in there
-2. **Ask for help in the Discord API server** - read the docs first - [![Discord](https://discordapp.com/api/guilds/81384788765712384/widget.png)](https://discord.gg/KZBHSxz)
-
-**Reminder: We will not provide help on OUR OWN help server for issues with modifying the bot**
+❗️ We **do not** provide support for modifying MusicBot, other than the guidance on this page. If you break something, that is your problem to fix, not ours. If, however, you need support with using the discord.py library which the bot utilises (such as the various [Client functions](http://discordpy.readthedocs.io/en/latest/api.html#client)), then you can find support on the [Discord API server](http://discord.gg/discord-api).
