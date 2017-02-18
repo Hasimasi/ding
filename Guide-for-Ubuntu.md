@@ -33,7 +33,7 @@ sudo apt-get upgrade -y
 sudo add-apt-repository ppa:mc3man/xerus-media -y
 
 sudo apt-get update -y
-sudo apt-get install git ffmpeg libopus-dev libffi-dev libsodium-dev -y
+sudo apt-get install git ffmpeg libopus-dev libffi-dev libsodium-dev python3-pip -y
 sudo apt-get upgrade -y
 ```
 
