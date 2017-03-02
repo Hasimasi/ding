@@ -10,6 +10,13 @@ This wiki is designed to help you install, configure and troubleshoot issues wit
 <a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Raspbian"><img src="http://i.imgur.com/v8FctVF.png"></a>
 <a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Debian"><img src="http://i.imgur.com/OUwHaXO.png"></a>
 <a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Docker"><img src="http://i.imgur.com/L6WQOD2.png"></a>
+</p>
+
+### Un-official installation methods
+
+These are versions of MusicBot that we don't maintain. They usually run our current version of MusicBot, but allow you to install it through different means. If you have problems with these versions, please contact the authors.
+
+* [Ansible Playbook](https://github.com/dmuth/MusicBot-Ansible) by [dmuth](https://github.com/dmuth)
 
 <h1 align="center">Information</h1>
 
