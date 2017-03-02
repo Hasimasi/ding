@@ -12,7 +12,7 @@ This wiki is designed to help you install, configure and troubleshoot issues wit
 <a href="https://github.com/SexualRhinoceros/MusicBot/wiki/Guide-for-Docker"><img src="http://i.imgur.com/L6WQOD2.png"></a>
 </p>
 
-### Un-official installation methods
+### Un-official distributions
 
 These are versions of MusicBot that we don't maintain. They usually run our current version of MusicBot, but allow you to install it through different means. If you have problems with these versions, please contact the authors.
 
