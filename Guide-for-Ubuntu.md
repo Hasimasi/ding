@@ -123,9 +123,16 @@ Now that the bot is running, press `Ctrl+A` then `d` separately to 'detach' from
 #### pm2
 Run these commands to install node.js and pm2, then start the Python script using it:
 
-    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-    sudo npm install pm2@latest -g
-    pm2 start run.py -n "bot" --interpreter=python3
+```sh
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install pm2@latest -g
+
+# Ubuntu 14.04(.*) LTS
+pm2 start run.py -n "bot" --interpreter=python3.5
+
+# Ubuntu 16.04 LTS or higher
+pm2 start run.py -n "bot" --interpreter=python3
+```
 
 To manage and review the status of the bot, type `pm2 status`. To view the logs/console for the bot, type `pm2 logs`. pm2 will restart the script if it breaks, and show you the uptime among other details on the status page.
