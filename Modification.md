@@ -54,6 +54,7 @@ There are a few of example commands that aren't currently in the bot for you to 
 
 * [Simple ping command](https://gist.github.com/jaydenkieran/8cf64f91fec73ba0bd127a08f6578988)
 * [Send a message to all bot's servers](https://gist.github.com/jaydenkieran/c18ddef3817c58ad1cbb6018d33790eb)
+* [Leave a server by ID](https://gist.github.com/jaydenkieran/96ae5633dec9ea87c70c48ab191413ed)
 
 There is also an example of editing an existing command:
 
